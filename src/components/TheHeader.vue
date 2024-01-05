@@ -20,20 +20,23 @@
   height: 140px;
   top: 0;
   left: 0;
-  position: absolute;
-  background-color: olive;
+  position: relative;
+  background-color: transparent;
+  border: 1px solid olive;
 }
 
 .container img {
   max-width: 100%;
   height: auto;
+
 }
 
 .links {
-  position: absolute;
+  position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  top: 80%;
   gap: 10px;
+
 }
 </style>
