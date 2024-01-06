@@ -25,7 +25,10 @@ import TheHeader from "@/components/TheHeader.vue";
 .view {
   display: flex;
   justify-content: center;
+  margin-top: 400px;
 
+}
+router-view {
 }
 
 </style>

@@ -10,16 +10,22 @@
         <div class="art-item">
           <img src="/src/assets/images/egentid.png" alt="A lone bird">
           <h3>Egentid</h3>
+          <p>Akylmålning 40x50 cm</p>
+          <p>Semi-abstrakt i tema blåmes</p>
         </div>
         <div class="art-item">
           <img src="/src/assets/images/komsaflygervi.png" alt="Two birds playing">
           <h3>Kom så flyger vi</h3>
+          <p>Akylmålning 40x50 cm</p>
+          <p>Semi-abstrakt i tema blåmes</p>
         </div>
       </div>
       <div class="bottom-row">
         <div class="art-item">
           <img src="/src/assets/images/skavileka.png" alt="Bird asking the other to play">
           <h3>Ska vi leka</h3>
+          <p>Akylmålning 40x50 cm</p>
+          <p>Semi-abstrakt i tema blåmes</p>
         </div>
       </div>
     </div>

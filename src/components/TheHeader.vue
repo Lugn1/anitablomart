@@ -20,10 +20,12 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 200px;
-  position: relative;
+  height: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
   background-color: transparent;
-  border: 1px solid olive;
+  border-bottom: 2px solid rgb(30, 160, 250);
 }
 
 .container img {
@@ -44,10 +46,11 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 0;
   right: 0;
-  gap: 10px;
+  gap: 30px;
+  background-color:  rgb(30, 160, 250);
 }
 
 a {
