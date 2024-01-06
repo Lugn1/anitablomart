@@ -50,14 +50,14 @@
   left: 0;
   right: 0;
   gap: 30px;
-  background-color:  rgb(30, 160, 250);
+  background-color:  rgb(30, 140, 180);
 }
 
 a {
   color: white;
   text-decoration: none;
   font-size: 24px;
-  font-family: sans-serif;
+  font-family: "Comic Sans MS", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 

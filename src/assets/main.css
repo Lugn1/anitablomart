@@ -1,9 +1,15 @@
 @import './base.css';
 
 html {
-    background-color: rgb(200, 250, 250);
+    background-color: rgb(240, 250, 250);
 }
 
-p, h1, h2, h3, h4 {
+h1, h2, h3, h4 {
+    font-family: "Comic Sans MS", sans-serif;
+    color: #333;
+}
+
+p {
+    color: #333;
     font-family: "Comic Sans MS", sans-serif;
 }
