@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="main-container">
     <h1>BLOGG</h1>
@@ -62,5 +66,4 @@
   font-style: italic;
 }
 </style>
-<script setup>
-</script>
+

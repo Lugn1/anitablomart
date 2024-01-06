@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="home-container">
     <section class="intro-section">
@@ -7,12 +11,8 @@
     </section>
     <section class="hero-section">
       <img src="/src/assets/images/kolibri.jpg" alt="Featured Artwork">
-      <p>Kolibri</p>
     </section>
 
-
-
-    <!-- Add more sections as needed -->
   </div>
 </template>
 
@@ -22,7 +22,6 @@
 }
 
 .hero-section {
-  background-color: #f0f0f0;
   padding: 20px;
 }
 
@@ -42,5 +41,4 @@
   text-decoration: none;
 }
 </style>
-<script setup>
-</script>
+

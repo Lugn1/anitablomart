@@ -5,15 +5,7 @@
 <template>
   <div class="main-container">
     <h2>Verk till salu</h2>
-    <div class="item">
-      <div class="item-img">
-        <img src="/src/assets/images/skavileka.png" alt="Ska vi leka">
-      </div>
-      <div class="item-info">
-        <h3>Ska vi leka</h3>
-        <p>Pris: 1234 SEK</p>
-      </div>
-    </div>
+
 
     <div class="item">
       <div class="item-img">
@@ -31,6 +23,16 @@
       </div>
       <div class="item-info">
         <h3>Kom så flyger vi</h3>
+        <p>Pris: 1234 SEK</p>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="item-img">
+        <img src="/src/assets/images/skavileka.png" alt="Ska vi leka">
+      </div>
+      <div class="item-info">
+        <h3>Ska vi leka</h3>
         <p>Pris: 1234 SEK</p>
       </div>
     </div>
@@ -63,16 +65,16 @@
   width: 60%;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px; /* Adds space between items */
+  margin-bottom: 40px;
   gap: 60px;
 }
 
 .item-img {
-  width: 50%; /* Sets the width to fill the container */
-  height: auto; /* Adjusts the height automatically */
-  display: flex; /* Ensures the container is flex */
-  justify-content: center; /* Center the image horizontally */
-  align-items: center; /* Center the image vertically */
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .item-img img {

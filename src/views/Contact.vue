@@ -7,8 +7,8 @@ const handleSubmit = () => {
 
 <template>
   <div>
-    <h1>KONTAKT</h1>
-    <h3>Kontakt via formulär</h3>
+    <h1>Kontakt</h1>
+    <h4>Fyll i formuläret och skicka så svarar jag så fort jag kan</h4>
     <form @submit.prevent="handleSubmit">
       <div class="form-group">
         <label for="name">Namn:</label>
