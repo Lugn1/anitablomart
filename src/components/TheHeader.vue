@@ -26,7 +26,7 @@
   top: 0;
   left: 0;
   background-color: transparent;
-  border-bottom: 2px solid rgb(30, 160, 250);
+  border-bottom: 2px solid rgba(30, 140, 60, 0.5%);
 }
 
 .container img {
@@ -39,7 +39,7 @@
 }
 
 .active-link {
-  color: red;
+  color: navy;
   text-decoration: underline;
 }
 
@@ -51,7 +51,7 @@
   left: 0;
   right: 0;
   gap: 30px;
-  background-color:  rgb(30, 140, 180);
+  background-color:  rgba(30, 140, 60, 80%);
 }
 
 a {
