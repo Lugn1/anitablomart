@@ -1,0 +1,6 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/anitablo/repositories/anitablomart
+    - /bin/cp -R images $DEPLOYPATH
+
+

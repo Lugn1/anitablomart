@@ -28,7 +28,6 @@
 .about {
   display: flex;
   justify-content: center;
-
   width: 60%;
   margin: 20px;
 }
