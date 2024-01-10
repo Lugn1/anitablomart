@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/anitablo/public_html/
-    - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp -R anitablomart $DEPLOYPATH
 
 
 
