@@ -1,8 +1,7 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/anitablo/repositories/
-    - cd anitablomart
+    - export DEPLOYPATH=/home/anitablo/repositories/anitablomart
     - /usr/local/bin/npm install
     - /usr/local/bin/npm run build
     - /bin/cp -R dist/* $DEPLOYPATH  # Copy built files to the public directory
