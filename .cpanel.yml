@@ -2,9 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/anitablo/public_html/
-    - /usr/local/bin/npm install --prefix /home/anitablo/repositories/anitablomart
-    - /usr/local/bin/npm run build --prefix /home/anitablo/repositories/anitablomart
-    - /bin/cp -R /home/anitablo/repositories/anitablomart/dist/ $DEPLOYPATH
+    - /bin/cp index.html $DEPLOYPATH
 
 
 
