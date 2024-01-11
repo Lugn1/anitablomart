@@ -11,7 +11,7 @@
         Har målat och experimenterat mig fram under många år och landat i den stil ni nu betraktar här. Har sedan barnsben alltid varit en naturälskare så färger som grönt och blått  följer ofta med in i mina målningar.
         Har gjort många vandringar i natur av alla de slag och bestigit en hel del berg genom åren. Sprungit maraton och ett var bland de vilda djuren i  Sydafrika. Efter en resa till Costa Rica öppnade det upp en fascination för fåglar och kanske det är därför de får ta plats i flertal av mina målningar.
         Jag vill gärna få fram känslan av lite rörelser i mina målningar…</p>
-      <img src="/src/assets/images/kolibri.jpg" alt="Kolibri">
+      <img :src="require('/src/assets/images/kolibri.jpg')" alt="Kolibri">
     </div>
   </div>
 </template>

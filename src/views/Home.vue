@@ -10,7 +10,7 @@
       <router-link to="/gallery">Utforska Galleriet</router-link>
     </section>
     <section class="hero-section">
-      <img src="/src/assets/images/kolibri.jpg" alt="Featured Artwork">
+      <img :src="require('/src/assets/images/kolibri.jpg')" alt="Featured Artwork">
     </section>
 
   </div>

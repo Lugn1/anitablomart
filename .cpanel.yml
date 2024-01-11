@@ -7,4 +7,5 @@ deployment:
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp jsconfig.json $DEPLOYPATH
-    - /bin/cp vite.config.js $DEPLOYPATH
+    - /bin/cp babel.config.cjs $DEPLOYPATH
+    - /bin/cp webpack.config.cjs $DEPLOYPATH
