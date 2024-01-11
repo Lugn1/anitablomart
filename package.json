@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node server.js",
+    "start": "node server.cjs",
     "build": "webpack --mode production",
     "postbuild": "node post-build.cjs"
   },
