@@ -2,10 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/anitablo/node-app/
-    - /bin/cp -R src/ $DEPLOYPATH
-    - /bin/cp index.html $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
-    - /bin/cp package.json $DEPLOYPATH
-    - /bin/cp jsconfig.json $DEPLOYPATH
-    - /bin/cp babel.config.cjs $DEPLOYPATH
-    - /bin/cp webpack.config.cjs $DEPLOYPATH
