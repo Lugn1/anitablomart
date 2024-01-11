@@ -1,4 +1,4 @@
-import express from 'express';
+const express = require('express');
 import serveStatic from 'serve-static';
 import path from 'path';
 import { fileURLToPath } from 'url';
