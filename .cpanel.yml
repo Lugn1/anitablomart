@@ -2,13 +2,9 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/anitablo/node-app/
-    - export DOCUMENTROOT=/home/anitablo/public_html/
     - /bin/cp -R src/ $DEPLOYPATH
     - /bin/cp index.html $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp package.json $DEPLOYPATH
     - /bin/cp jsconfig.json $DEPLOYPATH
     - /bin/cp vite.config.js $DEPLOYPATH
-    - cd $DEPLOYPATH
-    - npm run build
-    - /bin/cp -R $DEPLOYPATH/dist/ $DOCUMENTROOT
