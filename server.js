@@ -1,4 +1,4 @@
-const express = require('express');
+import express from 'express';
 import serveStatic from 'serve-static';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -17,5 +17,5 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 3000;
 app.listen(port);
