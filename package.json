@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "main": "src/main.js",
   "scripts": {
+    "start": "node src/main.js",
     "dev": "node --max-old-space-size=2500 node_modules/vite/bin/vite.js",
     "build": "vite build",
     "preview": "vite preview"
