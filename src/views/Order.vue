@@ -9,7 +9,7 @@
 
     <div class="item">
       <div class="item-img">
-        <img :src="require('/src/assets/images/egentid.png')" alt="Egentid">
+        <img src='../assets/images/egentid.png' alt="Egentid">
       </div>
       <div class="item-info">
         <h3>Egentid</h3>
@@ -19,7 +19,7 @@
 
     <div class="item">
       <div class="item-img">
-        <img :src="require('/src/assets/images/komsaflygervi.png')" alt="Kom så flyger vi">
+        <img src='../assets/images/komsaflygervi.png' alt="Kom så flyger vi">
       </div>
       <div class="item-info">
         <h3>Kom så flyger vi</h3>
@@ -29,7 +29,7 @@
 
     <div class="item">
       <div class="item-img">
-        <img :src="require('/src/assets/images/skavileka.png')" alt="Ska vi leka">
+        <img src='../assets/images/skavileka.png' alt="Ska vi leka">
       </div>
       <div class="item-info">
         <h3>Ska vi leka</h3>
@@ -39,7 +39,7 @@
 
     <div class="item">
       <div class="item-img">
-        <img :src="require('/src/assets/images/kolibri.jpg')" alt="Kolibri">
+        <img src='../assets/images/kolibri.jpg' alt="Kolibri">
       </div>
       <div class="item-info">
         <h3>Ska vi leka</h3>

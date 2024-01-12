@@ -4,7 +4,7 @@
 
 <template>
   <div class="container">
-    <img :src="require('@/assets/images/header.jpg')" alt="Blue and green colors">
+    <img src="../assets/images/header.jpg" alt="Blue and green colors">
     <div class="links">
       <router-link to="/" active-class="active-link">Hem</router-link>
       <router-link to="/gallery" active-class="active-link">Galleri</router-link>

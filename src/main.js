@@ -8,7 +8,7 @@ import About from "@/views/About.vue";
 import Contact from "@/views/Contact.vue";
 import Order from "@/views/Order.vue";
 import Blog from "@/views/Blog.vue";
-import Gallery from "@/views/Gallery.vue";
+import Gallery from "./views/Gallery.vue";
 
 const router = createRouter({
     history: createWebHistory(),
