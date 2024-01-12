@@ -1,6 +1,0 @@
----
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/anitablo/node-app/
-    - /bin/cp package.json $DEPLOYPATH
-    - /bin/cp server.cjs $DEPLOYPATH
