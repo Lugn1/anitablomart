@@ -62,4 +62,23 @@ a {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+@media only screen and (max-width: 600px) {
+
+  .container {
+    height: 52%;
+
+  }
+
+  .links {
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+    padding: 11px;
+  }
+
+  a {
+    font-size: 16px;
+  }
+}
+
 </style>
