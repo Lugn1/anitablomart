@@ -22,9 +22,6 @@
 <style scoped>
 
 
-
-
-
 .container {
   display: flex;
   flex-direction: column;
@@ -59,7 +56,7 @@
   left: 0;
   right: 0;
   gap: 30px;
-  background-color:  rgba(30, 140, 60, 70%);
+  background-color: rgba(30, 140, 60, 70%);
 }
 
 a {

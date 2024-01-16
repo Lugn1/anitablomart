@@ -6,7 +6,7 @@
   <div class="main-container">
     <h1>Blogg</h1>
     <div class="posts">
-        <p>Kommer snart..</p>
+        <p>Kommer snart</p>
     </div>
   </div>
 </template>
