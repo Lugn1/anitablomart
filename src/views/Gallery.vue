@@ -11,15 +11,15 @@
       <div class="bottom-row">
         <div class="art-item">
           <img src='../assets/images/himmel-hav.jpg' alt="Skärgårdens serenad">
-          <p>Skärgårdens serenad</p>
+
         </div>
         <div class="art-item">
           <img src='../assets/images/fiskmas-1.jpg' alt="Kraften i naturens stilla dans">
-          <p>Kraften i naturens stilla dans</p>
+
         </div>
         <div class="art-item">
           <img src='../assets/images/fiskmas-2.jpg' alt="Stormens dans">
-          <p>Stormens dans</p>
+
         </div>
       </div>
     </div>
@@ -29,16 +29,13 @@
       <div class="bottom-row">
         <div class="art-item">
           <img src='../assets/images/fiskmas-ljus.jpg' alt="Ska vi gå och bada">
-          <p>Ska vi gå och bada</p>
+
         </div>
         <div class="art-item">
           <img src='../assets/images/fiskmas-ljus2.jpg' alt="Två hjärtan, Två horisonter">
-          <p>Två hjärtan, Två horisonter</p>
+
         </div>
-        <div class="art-item">
-          <img src='../assets/images/fiskmas-ljus2.jpg' alt="Två hjärtan, Två horisonter">
-          <p>Två hjärtan, Två horisonter</p>
-        </div>
+
       </div>
     </div>
     <div class="artworks">
@@ -47,15 +44,14 @@
       <div class="bottom-row">
         <div class="art-item">
           <img src='../assets/images/Kom-sa-flyger-vi.jpg' alt="Two birds playing">
-          <p>Kom så flyger vi</p>
+
         </div>
         <div class="art-item">
           <img src='../assets/images/egentid.jpg' alt="A lone bird">
-          <p>Egentid</p>
+
         </div>
         <div class="art-item">
           <img src='../assets/images/ska-vi-leka.jpg' alt="Bird asking the other to play">
-          <p>Ska vi leka</p>
         </div>
       </div>
     </div>
@@ -72,18 +68,21 @@
 }
 
 .artworks {
-  width: 50%;
-  margin-bottom: 70px;
+  background: rgb(180, 185, 185);
+  width: 40%;
 }
 
 .art-item {
-  margin-left: 10px;
+  margin-left: 2px;
   text-align: center;
+  display: grid;
+
 }
 
 .bottom-row .art-item {
   width: 100%;
-  height: 300px;
+  height: 100%;
+
 }
 
 
@@ -95,12 +94,6 @@
 
 }
 
-p {
-  font-size: 16px;
-  font-style: italic;
-  margin-top: 0;
-
-}
 
 .top-row, .bottom-row {
   display: flex;
@@ -108,7 +101,7 @@ p {
 }
 
 .top-row .art-item img {
-  width: 60%;
+  width: 100%;
   height: auto;
 }
 
