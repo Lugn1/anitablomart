@@ -5,6 +5,10 @@
 <template>
   <div class="container">
     <img src="../assets/images/header.jpg" alt="Blue and green colors">
+    <div class="flags">
+      <img src="../assets/icons/sweden.png">
+      <img src="../assets/icons/united-kingdom.png">
+    </div>
     <div class="links">
       <router-link to="/" active-class="active-link">Hem</router-link>
       <router-link to="/gallery" active-class="active-link">Galleri</router-link>
@@ -12,10 +16,9 @@
       <router-link to="/blog" active-class="active-link">Blogg</router-link>
       <router-link to="/about" active-class="active-link">Om mig</router-link>
       <router-link to="/contact" active-class="active-link">Kontakt</router-link>
-    </div>
-    <div>
 
     </div>
+
   </div>
 </template>
 
@@ -57,6 +60,15 @@
   right: 0;
   gap: 30px;
   background-color: rgba(30, 140, 60, 70%);
+}
+.flags {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 2%;
+  top: 3%;
+  right: 4%;
+  gap: 35%;
 }
 
 a {
