@@ -4,27 +4,9 @@
 
 <template>
   <div class="main-container">
-    <h1>BLOGG</h1>
+    <h1>Blogg</h1>
     <div class="posts">
-      <div class="post">
-        <h2>Inlägg Titel 1</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...</p>
-        <p class="date">2024-01-06</p>
-      </div>
-
-      <div class="post">
-        <h2>Inlägg Titel 2</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="date">2024-01-05</p>
-      </div>
-
-      <div class="post">
-        <h2>Inlägg Titel 3</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p class="date">2024-01-04</p>
-      </div>
-
-
+        <p>Kommer snart..</p>
     </div>
   </div>
 </template>
@@ -39,6 +21,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+p {
+  font-size: 20px;
+  font-style: italic;
 }
 
 .post {
@@ -65,5 +52,6 @@
   font-size: 14px;
   font-style: italic;
 }
+
 </style>
 

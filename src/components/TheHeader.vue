@@ -13,15 +13,23 @@
       <router-link to="/about" active-class="active-link">Om mig</router-link>
       <router-link to="/contact" active-class="active-link">Kontakt</router-link>
     </div>
+    <div>
+
+    </div>
   </div>
 </template>
 
 <style scoped>
+
+
+
+
+
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 400px;
+  height: 25%;
   position: absolute;
   top: 0;
   left: 0;
@@ -51,14 +59,14 @@
   left: 0;
   right: 0;
   gap: 30px;
-  background-color:  rgba(30, 140, 60, 80%);
+  background-color:  rgba(30, 140, 60, 70%);
 }
 
 a {
   color: white;
   text-decoration: none;
   font-size: 24px;
-  font-family: "Comic Sans MS", sans-serif;
+  font-family: "Arsenal", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 

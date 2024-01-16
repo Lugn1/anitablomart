@@ -19,13 +19,12 @@ import TheHeader from "./components/TheHeader.vue";
   flex-direction: column;
   height: 100%;
   width: 100%;
-  gap: 20px;
 }
 
 .view {
   display: flex;
   justify-content: center;
-  margin-top: 400px;
+  margin-top: 14%;
 
 }
 router-view {
