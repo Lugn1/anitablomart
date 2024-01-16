@@ -48,6 +48,7 @@
 </template>
 
 <style scoped>
+
 .main-container {
   display: flex;
   justify-content: center;
@@ -57,7 +58,7 @@
 .about {
   display: flex;
   justify-content: center;
-  width: 80%;
+  width: 70%;
 }
 
 .about img {
@@ -68,7 +69,9 @@
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
+  font-family: 'Arsenal', sans-serif;
+  line-height: 1.6;
 }
 
 .image-title {
