@@ -1,83 +1,108 @@
 <script setup>
-
+import Social from "@/components/Social.vue";
 </script>
 
 <template>
-  <div class="container">
-    <img src="../assets/images/header.jpg" alt="Blue and green colors">
-    <div class="flags">
-      <img src="../assets/icons/sweden.png">
-      <img src="../assets/icons/united-kingdom.png">
+  <div class="main-container">
+  <div class="top-container">
+    <div class="signature-container">
+    <img src="../assets/signature-placeholder.png" alt="Signature">
     </div>
-    <div class="links">
+      <Social></Social>
+    <div class="flags">
+      <img src="../assets/icons/sweden.png" alt="Swedish flag icon">
+      <img src="../assets/icons/united-kingdom.png" alt="UK flag icon">
+    </div>
+  </div>
+  <div class="links-container">
+    <div class="link-items">
       <router-link to="/" active-class="active-link">Hem</router-link>
       <router-link to="/gallery" active-class="active-link">Galleri</router-link>
       <router-link to="/order" active-class="active-link">Beställa verk</router-link>
       <router-link to="/blog" active-class="active-link">Blogg</router-link>
       <router-link to="/about" active-class="active-link">Om mig</router-link>
       <router-link to="/contact" active-class="active-link">Kontakt</router-link>
-
     </div>
-
   </div>
+    </div>
 </template>
 
 <style scoped>
 
-
-.container {
+.main-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
-  height: 30%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: transparent;
-  border-bottom: 2px solid rgba(30, 140, 60, 0.5%);
 }
 
-.container img {
+.main-container img {
   max-width: 100%;
   max-height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-content: center;
   height: auto;
   object-fit: cover;
   object-position: bottom;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin-bottom: 1%;
+}
+
+.links-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100.9%;
+  left: 0;
+  background-color: rgba(30, 140, 60, 70%);
+}
+
+.link-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  width: 60%;
+  margin: 1%;
 
 }
+
+.link-items a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Arsenal", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.flags {
+  display: flex;
+  width: 6%;
+  gap: 15%;
+}
+
 
 .active-link {
   color: navy;
   text-decoration: underline;
 }
 
-.links {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  gap: 30px;
-  background-color: rgba(30, 140, 60, 70%);
-}
-.flags {
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  width: 2%;
-  top: 3%;
-  right: 4%;
-  gap: 35%;
+.signature-container {
+  width: 40%;
+  height: auto;
+  object-fit: contain;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 24px;
-  font-family: "Arsenal", sans-serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -89,13 +114,11 @@ a {
   .links {
     flex-direction: row;
     gap: 15px;
+    font-size: 32px;
     text-align: center;
     padding: 11px;
   }
 
-  a {
-    font-size: 16px;
-  }
 }
 
 </style>

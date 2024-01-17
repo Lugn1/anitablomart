@@ -7,12 +7,9 @@ import Social from "@/components/Social.vue";
 <template>
   <div class="main-container">
     <TheHeader></TheHeader>
-
     <div class="view">
       <router-view></router-view>
-      <Social></Social>
     </div>
-
   </div>
 </template>
 
@@ -23,18 +20,12 @@ import Social from "@/components/Social.vue";
   flex-direction: column;
   height: 100%;
   width: 100%;
-}
-.Social {
-  display: flex;
-  justify-content: center;
-  width: 12px;
+  margin-top: 6px;
 }
 
 .view {
   display: flex;
   justify-content: center;
-  margin-top: 14%;
-
 }
 router-view {
 }

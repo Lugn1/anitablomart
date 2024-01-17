@@ -4,10 +4,12 @@
 
 <template>
   <div class="SocialContainer">
-    <img src="../assets/icons/Instagram_Glyph_Gradient.png" alt="instagram icon">
       <a href="https://www.instagram.com/ani_blom" target="_blank" rel="noopener noreferrer">
-        <button class="InstaButton">Min Instagram</button>
+        <img src="../assets/icons/Instagram_Glyph_Gradient.png" alt="Instagram icon">
       </a>
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+      <img src="../assets/icons/Facebook_Logo_Primary.png" alt="Facebook icon">
+    </a>
   </div>
 </template>
 
@@ -15,33 +17,26 @@
 <style scoped>
 .SocialContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 20%;
-  height: 25%;
-  position: absolute;
-  top: 25%;
-  right: 0%;
   background-color: transparent;
+  margin-right: 8%;
+  gap: 12%;
   border-bottom: 2px solid rgba(30, 140, 60, 0.5%);
 }
 
 .SocialContainer img {
-  max-width: 40%;
-  max-height: 40%;
-  height: auto;
+  width: auto;
+  max-height: 30px;
   object-fit: cover;
-  object-position: bottom;
-
-
 }
-.InstaButton {
 
+.InstaButton {
   background: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
   color: white;
   font-family: "Arsenal", sans-serif;
-  padding: 10px 20px;
+  padding: 5px 10px;
   margin-top: 5px;
   border: none;
   border-radius: 25px;
