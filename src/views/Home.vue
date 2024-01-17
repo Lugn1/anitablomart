@@ -10,27 +10,31 @@
 
         för att gestalta naturens magi. Målningarna är en hyllning till den
 
-        storslagna skönheten som omger oss.
+        storslagna skönhet som naturen omger oss med.
 
-        Min önskan är att de kan påminna betraktaren om att det finns en värld
+        Min önskan är att mina alster kan påminna betraktaren om att det
 
-        bortom vår många gånger hektiska vardag. En värld fylld av fridfull skönhet
+        finns en värld bortom vår hektiska vardag. En värld fylld av
 
-        och enkel glädje som bara väntar på att bli upptäckt och omfamnad. Jag tror
+        fridfull skönhet och enkel glädje som bara väntar på att bli upptäckt och
 
-        på naturens osynliga kraft att läka och ge energi.
+        omfamnad.
 
-
+        Jag tror på naturens osynliga kraft att läka och ge energi.
 
         I synnerhet fascineras jag av fåglar, dessa lätta varelser som gärna landar på
 
         duken och blir en del av min konstnärliga berättelse. Deras närvaro förstärker
 
-        budskapet om frihet och lätthet i mitt arbete. </p>
-      <router-link to="/gallery">Utforska Galleriet</router-link>
+        budskapet om frihet och lätthet i mitt arbete.
+
+        Här och var dyker andra små levande varelser upp i en målning som
+
+        kombinerar expressionism med det figurativa.  </p>
+<!--      <router-link to="/gallery">Utforska Galleriet</router-link>-->
     </section>
     <section class="hero-section">
-    <!-- <img src='/src/assets/images/???' alt=" --- "> -->
+      <!-- <img src='/src/assets/images/???' alt=" --- "> -->
     </section>
 
   </div>
@@ -39,6 +43,9 @@
 <style scoped>
 .home-container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 60%;
 }
 
 .hero-section {
@@ -52,6 +59,7 @@
 
 .intro-section {
   margin-top: 40px;
+
 }
 
 .router-link {
@@ -59,6 +67,13 @@
   margin-top: 10px;
   color: blue;
   text-decoration: none;
+}
+
+p {
+  font-size: 20px;
+  font-family: 'Arsenal', sans-serif;
+  line-height: 1.6;
+  font-style: italic;
 }
 </style>
 
