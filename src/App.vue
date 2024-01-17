@@ -1,6 +1,5 @@
 <script setup>
 import TheHeader from "./components/TheHeader.vue";
-import Social from "@/components/Social.vue";
 
 </script>
 
