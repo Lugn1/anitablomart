@@ -6,7 +6,27 @@
   <div class="home-container">
     <section class="intro-section">
       <h1>Välkommen till Anita Blom Art</h1>
-      <p>Här kan du utforska mina verk, lära dig om min konstnärliga resa, och få en inblick i de historier som varje penseldrag berättar.</p>
+      <p>Välkommen till min konstnärliga värld, där penseln blir mitt redskap
+
+        för att gestalta naturens magi. Målningarna är en hyllning till den
+
+        storslagna skönheten som omger oss.
+
+        Min önskan är att de kan påminna betraktaren om att det finns en värld
+
+        bortom vår många gånger hektiska vardag. En värld fylld av fridfull skönhet
+
+        och enkel glädje som bara väntar på att bli upptäckt och omfamnad. Jag tror
+
+        på naturens osynliga kraft att läka och ge energi.
+
+
+
+        I synnerhet fascineras jag av fåglar, dessa lätta varelser som gärna landar på
+
+        duken och blir en del av min konstnärliga berättelse. Deras närvaro förstärker
+
+        budskapet om frihet och lätthet i mitt arbete. </p>
       <router-link to="/gallery">Utforska Galleriet</router-link>
     </section>
     <section class="hero-section">

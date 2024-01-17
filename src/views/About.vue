@@ -26,7 +26,7 @@
         <p> Så kom en förfrågan 2012 om jag ville följa med på en akvarellkurs i Provence och utan tvekan sa jag JA,
           absolut. Och sedan har det bara fortsatt. Det blev kurser i oljemålning där vi till en början skapade målningar
           inspirerat utifrån de stora konstnärerna i lärande syfte. Mycket lärorikt.</p>
-
+      <br>
        <p> I efterhand märkte jag att det blev för mycket av min inre perfektionist som styrde mig åt för ett precist och
          ”perfekt” (petande) att jag ville pröva annat sätt att måla på. Fortsatte med ett par akvarellkurser men blev
          inte heller där fri från min inre perfektionist och hittade inte ut från det.</p>
@@ -38,14 +38,14 @@
 
     </div>
     <div class="educations">
-      <p>Kurser</p>
-        <p>Akvarell – Konstnär Margareta Sölveland, Konstnär Ali Pournoroozy
+      <h2>Kurser</h2>
+        <h4>Akvarell – Konstnär Margareta Sölveland, Konstnär Ali Pournoroozy
           <br>
           Oljemålning – Konstnär Kristina Frenguelli
           <br>
           Alla medium – Art College Göteborg
           <br>
-          Akrylmålning – Konstnär Ania Witwitzka</p>
+          Akrylmålning – Konstnär Ania Witwitzka</h4>
 
     </div>
   </div>
@@ -78,7 +78,7 @@
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'Arsenal', sans-serif;
   line-height: 1.6;
 }
