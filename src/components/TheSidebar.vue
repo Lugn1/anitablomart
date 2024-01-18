@@ -1,22 +1,23 @@
 <script>
-import { collapsed, toggleSidebar, sidebarWidth} from "@/components/state.js";
+import {collapsed, sidebarWidth, toggleSidebarOff} from "@/components/state.js";
 
 export default {
+  methods: {toggleSidebarOff},
   props: {},
   setup() {
-    return {collapsed, toggleSidebar, sidebarWidth}
+    return {collapsed, toggleSidebarOff, sidebarWidth}
   }
 }
 </script>
 
 <template>
-  <div class="sidebar" :style="{ width: sidebarWidth}">
+  <div class="sidebar" :style="{ width: sidebarWidth}" v-show="!collapsed">
     <span
       class="collapse-icon"
-      @click="toggleSidebar"
+      @click="toggleSidebarOff"
     >
-<!--      <i class="fas fa-angle-double-left"/>-->
-      <i class="fa-solid fa-bars"></i>
+
+      <i class="fas fa-angle-double-left"></i>
     </span>
   </div>
 </template>
@@ -48,6 +49,7 @@ background-color: var(--sidebar-bg-color);
 }
 
 .collapse-icon {
-
+position: absolute;
+  padding: 0.75em;
 }
 </style>
