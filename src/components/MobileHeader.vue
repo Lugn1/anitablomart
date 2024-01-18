@@ -15,8 +15,8 @@ export default defineComponent({
 <template>
 
   <Sidebar />
-  <span class="collapse-hamb" @click="toggleSidebarOn">
-  <i class="fa-solid fa-bars" ></i>
+  <span  class="collapse-hamb" @click="toggleSidebarOn">
+  <i class="fa-solid fa-bars fa-xl" ></i>
   </span>
 
 </template>

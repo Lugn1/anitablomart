@@ -49,6 +49,11 @@ display: none;
 
   .mobile-header {
     display: block;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 32px;
+    width: 32px;
+
   }
   .main-header{
     display: none;
