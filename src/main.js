@@ -9,6 +9,7 @@ import Contact from "@/views/Contact.vue";
 import Order from "@/views/Order.vue";
 import Blog from "@/views/Blog.vue";
 import Gallery from "./views/Gallery.vue";
+import '@fortawesome/fontawesome-free/js/all'
 
 const router = createRouter({
     history: createWebHistory(),
