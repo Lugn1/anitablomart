@@ -17,7 +17,7 @@ export default {
       @click="toggleSidebarOff"
     >
 
-      <i class="fas fa-angle-double-left"></i>
+      <i class="fas fa-angle-double-left fa-xl"></i>
     </span>
   </div>
 </template>

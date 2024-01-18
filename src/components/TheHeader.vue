@@ -91,7 +91,7 @@ import Social from "@/components/SocialBar.vue";
 }
 
 
-.active-link {
+.link-items .active-link {
   color: navy;
   text-decoration: underline;
 }
