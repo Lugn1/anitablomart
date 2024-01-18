@@ -90,8 +90,7 @@ import Social from "@/components/Social.vue";
   gap: 15%;
 }
 
-
-.active-link {
+.link-items .active-link {
   color: navy;
   text-decoration: underline;
 }
@@ -118,7 +117,8 @@ import Social from "@/components/Social.vue";
     text-align: center;
     padding: 11px;
   }
-
 }
+
+
 
 </style>

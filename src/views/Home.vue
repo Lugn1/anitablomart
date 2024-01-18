@@ -6,7 +6,7 @@
   <div class="home-container">
     <section class="intro-section">
       <h1>Välkommen till Anita Blom Art</h1>
-      <p>Välkommen till min konstnärliga värld, där penseln blir mitt redskap
+      <article>Välkommen till min konstnärliga värld, där penseln blir mitt redskap
 
         för att gestalta naturens magi. Målningarna är en hyllning till den
 
@@ -21,20 +21,26 @@
         omfamnad.
 
         Jag tror på naturens osynliga kraft att läka och ge energi.
+      </article>
 
+      <article>
         I synnerhet fascineras jag av fåglar, dessa lätta varelser som gärna landar på
 
         duken och blir en del av min konstnärliga berättelse. Deras närvaro förstärker
 
         budskapet om frihet och lätthet i mitt arbete.
+      </article>
+
+      <article>
 
         Här och var dyker andra små levande varelser upp i en målning som
 
-        kombinerar expressionism med det figurativa.  </p>
-<!--      <router-link to="/gallery">Utforska Galleriet</router-link>-->
+        kombinerar expressionism med det figurativa.
+      </article>
+      <!--      <router-link to="/gallery">Utforska Galleriet</router-link>-->
     </section>
     <section class="hero-section">
-      <!-- <img src='/src/assets/images/???' alt=" --- "> -->
+      <img src='/src/assets/images/egentid.jpg' alt=" --- ">
     </section>
 
   </div>
@@ -42,14 +48,18 @@
 
 <style scoped>
 .home-container {
-  text-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 60%;
+  width: 50%;
 }
 
 .hero-section {
-  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 5%;
 }
 
 .hero-section img {
@@ -58,8 +68,10 @@
 }
 
 .intro-section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
   margin-top: 40px;
-
 }
 
 .router-link {
@@ -69,11 +81,13 @@
   text-decoration: none;
 }
 
-p {
+article {
   font-size: 20px;
   font-family: 'Arsenal', sans-serif;
   line-height: 1.6;
   font-style: italic;
+  margin-bottom: 2%;
+  text-align: left;
 }
 </style>
 
