@@ -11,9 +11,10 @@ import MobileHeader from "@/components/MobileHeader.vue";
     </div>
     <div class="mobile-header">
        <MobileHeader />
+         <Sidebar />
     </div>
 
-    <Sidebar/>
+
     <div class="view">
       <router-view></router-view>
     </div>
