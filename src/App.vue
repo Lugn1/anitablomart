@@ -6,7 +6,13 @@ import MobileHeader from "@/components/MobileHeader.vue";
 
 <template>
   <div class="main-container">
+  <div class="main-header">
     <TheHeader></TheHeader>
+    </div>
+    <div class="mobile-header">
+       <MobileHeader />
+    </div>
+
     <Sidebar/>
     <div class="view">
       <router-view></router-view>
@@ -29,6 +35,23 @@ import MobileHeader from "@/components/MobileHeader.vue";
   justify-content: center;
 }
 router-view {
+}
+
+.mobile-header{
+display: none;
+}
+.main-header{
+  display: block;
+}
+
+@media only screen and (max-width: 428px) {
+
+  .mobile-header {
+    display: block;
+  }
+  .main-header{
+    display: none;
+  }
 }
 
 </style>
