@@ -1,11 +1,12 @@
 <script setup>
 import TheHeader from "./components/TheHeader.vue";
-
+import Sidebar from "@/components/Sidebar.vue";
 </script>
 
 <template>
   <div class="main-container">
     <TheHeader></TheHeader>
+    <Sidebar/>
     <div class="view">
       <router-view></router-view>
     </div>

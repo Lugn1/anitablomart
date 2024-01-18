@@ -46,4 +46,8 @@ background-color: var(--sidebar-bg-color);
   display: flex;
   flex-direction: column;
 }
+
+.collapse-icon {
+
+}
 </style>
