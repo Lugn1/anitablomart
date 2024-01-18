@@ -2,7 +2,7 @@ import {ref, computed} from 'vue'
 
 
 
-export const collapsed = ref(false);
+export const collapsed = ref(true);
 export const toggleSidebarOff = () => (collapsed.value = true)
 export const toggleSidebarOn = () => (collapsed.value = false)
 
