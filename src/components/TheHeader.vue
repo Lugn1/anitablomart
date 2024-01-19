@@ -90,7 +90,6 @@ import Social from "@/components/SocialBar.vue";
   gap: 15%;
 }
 
-
 .link-items .active-link {
   color: navy;
   text-decoration: underline;
@@ -118,7 +117,8 @@ import Social from "@/components/SocialBar.vue";
     text-align: center;
     padding: 11px;
   }
-
 }
+
+
 
 </style>
