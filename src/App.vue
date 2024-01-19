@@ -1,11 +1,20 @@
 <script setup>
 import TheHeader from "./components/TheHeader.vue";
-
+import Sidebar from "@/components/TheSidebar.vue";
+import MobileHeader from "@/components/MobileHeader.vue";
 </script>
 
 <template>
   <div class="main-container">
+  <div class="main-header">
     <TheHeader></TheHeader>
+    </div>
+    <div class="mobile-header">
+       <MobileHeader />
+         <Sidebar />
+    </div>
+
+
     <div class="view">
       <router-view></router-view>
     </div>
@@ -27,6 +36,28 @@ import TheHeader from "./components/TheHeader.vue";
   justify-content: center;
 }
 router-view {
+}
+
+.mobile-header{
+display: none;
+}
+.main-header{
+  display: block;
+}
+
+@media only screen and (max-width: 428px) {
+
+  .mobile-header {
+    display: block;
+    margin-top: 5%;
+    margin-left: 5%;
+    height: 32px;
+    width: 32px;
+
+  }
+  .main-header{
+    display: none;
+  }
 }
 
 </style>

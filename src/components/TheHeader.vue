@@ -1,5 +1,5 @@
 <script setup>
-import Social from "@/components/Social.vue";
+import Social from "@/components/SocialBar.vue";
 </script>
 
 <template>
