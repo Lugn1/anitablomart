@@ -41,7 +41,6 @@
         </div>
       </div>
     </div>
-    <h1>Verk till salu</h1>
     <div class="item-container">
       <div class="item-img">
         <img src='../assets/images/himmel-hav.jpg' alt="Skärgårdens serenad">
@@ -88,7 +87,7 @@
       </div>
       <div class="item-info">
         <h3>Två hjärtan, Två horisonter</h3>
-        <p>Akyrlmålning 32x32</p>
+        <p>Akyrlmålning</p>
         <p>Pris: ---- SEK</p>
       </div>
     </div>
@@ -98,8 +97,8 @@
       </div>
       <div class="item-info">
         <h3>Kom så flyger vi</h3>
-        <p>Akyrlmålning --x--</p>
-        <p>Pris: ---- SEK</p>
+        <p>Akyrlmålning 40x50</p>
+        <p>Pris: 3600 SEK</p>
       </div>
     </div>
     <div class="item-container">
