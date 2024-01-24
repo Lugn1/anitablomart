@@ -98,6 +98,23 @@ p {
   width: 70%;
 
 }
+@media only screen and (max-width: 767px) {
+  .about {
+    width: 100%; /* Adjust the width as needed for smaller screens */
+  }
+
+  .about img {
+    float: none; /* Center the image on smaller screens */
+    margin: 10px auto; /* Adjust margin as needed */
+    display: block;
+    width: auto;
+    height: 170px;
+  }
+
+  .educations {
+    width: 100%; /* Adjust the width as needed for smaller screens */
+  }
+}
 
 </style>
 
