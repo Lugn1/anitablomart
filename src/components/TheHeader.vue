@@ -4,27 +4,27 @@ import Social from "@/components/SocialBar.vue";
 
 <template>
   <div class="main-container">
-  <div class="top-container">
-    <div class="signature-container">
-    <img src="../assets/signature-placeholder.png" alt="Signature">
-    </div>
+    <div class="top-container">
+      <div class="signature-container">
+        <img src="../assets/signature-placeholder.png" alt="Signature">
+      </div>
       <Social></Social>
-    <div class="flags">
-      <img src="../assets/icons/sweden.png" alt="Swedish flag icon">
-      <img src="../assets/icons/united-kingdom.png" alt="UK flag icon">
+      <div class="flags">
+        <img src="../assets/icons/sweden.png" alt="Swedish flag icon">
+        <img src="../assets/icons/united-kingdom.png" alt="UK flag icon">
+      </div>
+    </div>
+    <div class="links-container">
+      <div class="link-items">
+        <router-link to="/" active-class="active-link">Hem</router-link>
+        <router-link to="/gallery" active-class="active-link">Galleri</router-link>
+        <router-link to="/order" active-class="active-link">Beställa verk</router-link>
+        <router-link to="/blog" active-class="active-link">Blogg</router-link>
+        <router-link to="/about" active-class="active-link">Om mig</router-link>
+        <router-link to="/contact" active-class="active-link">Kontakt</router-link>
+      </div>
     </div>
   </div>
-  <div class="links-container">
-    <div class="link-items">
-      <router-link to="/" active-class="active-link">Hem</router-link>
-      <router-link to="/gallery" active-class="active-link">Galleri</router-link>
-      <router-link to="/order" active-class="active-link">Beställa verk</router-link>
-      <router-link to="/blog" active-class="active-link">Blogg</router-link>
-      <router-link to="/about" active-class="active-link">Om mig</router-link>
-      <router-link to="/contact" active-class="active-link">Kontakt</router-link>
-    </div>
-  </div>
-    </div>
 </template>
 
 <style scoped>
@@ -73,7 +73,6 @@ import Social from "@/components/SocialBar.vue";
   gap: 4%;
   width: 60%;
   margin: 1%;
-
 }
 
 .link-items a {
@@ -102,7 +101,6 @@ import Social from "@/components/SocialBar.vue";
 }
 
 
-
 @media only screen and (max-width: 600px) {
 
   .container {
@@ -118,7 +116,6 @@ import Social from "@/components/SocialBar.vue";
     padding: 11px;
   }
 }
-
 
 
 </style>
