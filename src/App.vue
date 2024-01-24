@@ -6,22 +6,24 @@ import MobileHeader from "@/components/MobileHeader.vue";
 
 <template>
   <div class="main-container">
-  <div class="main-header">
-    <TheHeader></TheHeader>
+    <div class="main-header">
+      <TheHeader></TheHeader>
     </div>
     <div class="mobile-header">
-       <MobileHeader />
-         <Sidebar />
+      <MobileHeader/>
+      <Sidebar/>
     </div>
-
-
     <div class="view">
-      <router-view></router-view>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component"/>
+        </transition>
+      </router-view>
     </div>
   </div>
 </template>
 
-<style scoped>
+<style>
 
 .main-container {
   display: flex;
@@ -31,17 +33,30 @@ import MobileHeader from "@/components/MobileHeader.vue";
   margin-top: 6px;
 }
 
+.fade-enter-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+
 .view {
   display: flex;
   justify-content: center;
 }
-router-view {
+
+.mobile-header {
+  display: none;
 }
 
-.mobile-header{
-display: none;
-}
-.main-header{
+.main-header {
   display: block;
 }
 
@@ -55,7 +70,8 @@ display: none;
     width: 32px;
 
   }
-  .main-header{
+
+  .main-header {
     display: none;
   }
 }
