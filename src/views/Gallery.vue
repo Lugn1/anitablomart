@@ -225,6 +225,23 @@
   max-height: 80%;
 
 }
+@media only screen and (max-width: 767px) {
+  .main-container {
+    width: 100%;
+
+  }
+  .artworks {
+    width: 100%;
+  }
+
+  .item-container {
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    margin-left: 0;
+  }
+
+}
 
 
 </style>
