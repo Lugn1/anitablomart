@@ -8,6 +8,7 @@ const openPopup = (src) => {
   console.log('Opening popup with image source:', src);
   showPopup.value = true;
   popupImageSrc.value = src;
+  console.log(popupImageSrc.value)
 };
 
 const closePopup = () => {
@@ -20,7 +21,7 @@ const closePopup = () => {
     <h1>Galleri</h1>
     <div class="artworks">
       <div class="bottom-row">
-        <div class="art-item" @click="openPopup('../assets/images/cropped/himmel-hav-cropped.jpg?v=12345')">
+        <div class="art-item" @click="openPopup('../assets/images/cropped/himmel-hav-cropped.jpg')">
           <img src='../assets/images/himmel-hav.jpg' alt="Skärgårdens serenad">
         </div>
         <div class="art-item" @click="openPopup('../assets/images/fiskmas-1.jpg')">
