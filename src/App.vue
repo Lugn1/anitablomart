@@ -2,6 +2,7 @@
 import TheHeader from "./components/TheHeader.vue";
 import Sidebar from "@/components/TheSidebar.vue";
 import MobileHeader from "@/components/MobileHeader.vue";
+import TheFooter from "@/components/TheFooter.vue";
 </script>
 
 <template>
@@ -20,6 +21,7 @@ import MobileHeader from "@/components/MobileHeader.vue";
         </transition>
       </router-view>
     </div>
+    <TheFooter></TheFooter>
   </div>
 </template>
 
@@ -59,6 +61,7 @@ import MobileHeader from "@/components/MobileHeader.vue";
 .main-header {
   display: block;
 }
+
 
 @media only screen and (max-width: 428px) {
 
