@@ -1,5 +1,18 @@
 <script setup>
+import { ref } from 'vue';
 
+const showPopup = ref(false);
+const popupImageSrc = ref('');
+
+const openPopup = (src) => {
+  console.log('Opening popup with image source:', src);
+  showPopup.value = true;
+  popupImageSrc.value = src;
+};
+
+const closePopup = () => {
+  showPopup.value = false;
+};
 </script>
 
 <template>
@@ -7,13 +20,13 @@
     <h1>Galleri</h1>
     <div class="artworks">
       <div class="bottom-row">
-        <div class="art-item">
+        <div class="art-item" @click="openPopup('../assets/images/cropped/himmel-hav-cropped.jpg?v=12345')">
           <img src='../assets/images/himmel-hav.jpg' alt="Skärgårdens serenad">
         </div>
-        <div class="art-item">
+        <div class="art-item" @click="openPopup('../assets/images/fiskmas-1.jpg')">
           <img src='../assets/images/fiskmas-1.jpg' alt="Kraften i naturens stilla dans">
         </div>
-        <div class="art-item">
+        <div class="art-item" @click="openPopup('../assets/images/fiskmas-2.jpg')">
           <img src='../assets/images/fiskmas-2.jpg' alt="Stormens dans">
         </div>
       </div>
@@ -121,6 +134,9 @@
         <p>Akyrlmålning 32x32</p>
         <p>Pris: ---- SEK</p>
       </div>
+    </div>
+    <div v-if="showPopup" class="popup" @click="closePopup">
+      <img :src="popupImageSrc" alt="Popup Image" class="popup-img" @click.stop />
     </div>
   </div>
 
