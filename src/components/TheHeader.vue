@@ -1,27 +1,53 @@
 <script setup>
+import { ref } from 'vue';
 import Social from "@/components/SocialBar.vue";
+import i18n from '@/i18n.js';
+
+
+
+const swedishFlagClicked = ref(i18n.locale === 'sv');
+const englishFlagClicked = ref(i18n.locale === 'en');
+
+const setLanguageToSwedish = () => {
+  i18n.locale = 'sv';
+  console.log('Swedish flag clicked');
+  swedishFlagClicked.value = true;
+  englishFlagClicked.value = false;
+
+};
+
+const setLanguageToEnglish = () => {
+  i18n.locale = 'en';
+  console.log('English flag clicked');
+  englishFlagClicked.value = true;
+  swedishFlagClicked.value = false;
+
+};
+
+defineExpose({ setLanguageToSwedish, setLanguageToEnglish });
+
 </script>
 
 <template>
-  <div class="main-container">
+  <div class="main-container" >
     <div class="top-container">
       <div class="signature-container">
         <img src="../assets/signature-placeholder.png" alt="Signature">
       </div>
       <Social></Social>
       <div class="flags">
-        <img src="../assets/icons/sweden.png" alt="Swedish flag icon">
-        <img src="../assets/icons/united-kingdom.png" alt="UK flag icon">
+        <img :class="{ 'highlighted': swedishFlagClicked }" src="../assets/icons/sweden.png" alt="Swedish flag icon" @click="setLanguageToSwedish">
+        <img :class="{ 'highlighted': englishFlagClicked }" src="../assets/icons/united-kingdom.png" alt="UK flag icon" @click="setLanguageToEnglish">
       </div>
     </div>
     <div class="links-container">
       <div class="link-items">
-        <router-link to="/" active-class="active-link">Hem</router-link>
-        <router-link to="/gallery" active-class="active-link">Galleri</router-link>
-        <router-link to="/order" active-class="active-link">Beställa verk</router-link>
-        <router-link to="/blog" active-class="active-link">Blogg</router-link>
-        <router-link to="/about" active-class="active-link">Om mig</router-link>
-        <router-link to="/contact" active-class="active-link">Kontakt</router-link>
+        <router-link to="/" active-class="active-link">{{$t('Home')}}</router-link>
+        <router-link to="/gallery" active-class="active-link">{{$t('Gallery')}}</router-link>
+        <router-link to="/order" active-class="active-link">{{$t('Order works')}}</router-link>
+        <router-link to="/blog" active-class="active-link">{{$t('Blog')}}</router-link>
+        <router-link to="/about" active-class="active-link">{{$t('About')}}</router-link>
+        <router-link to="/contact" active-class="active-link">{{$t('Contact')}}</router-link>
       </div>
     </div>
   </div>
@@ -29,6 +55,9 @@ import Social from "@/components/SocialBar.vue";
 
 <style scoped>
 
+.highlighted {
+  box-shadow: 0 0 10px rgba(30, 140, 60, 70%); ; /* Change as needed */
+}
 .main-container {
   display: flex;
   flex-direction: column;

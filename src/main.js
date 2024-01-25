@@ -10,6 +10,7 @@ import Order from "@/views/Order.vue";
 import Blog from "@/views/Blog.vue";
 import Gallery from "./views/Gallery.vue";
 import '@fortawesome/fontawesome-free/js/all'
+import i18n from "@/i18n.js";
 
 const router = createRouter({
     history: createWebHistory(),
@@ -23,4 +24,4 @@ const router = createRouter({
     ]
 })
 
-createApp(App).use(router).mount('#app')
+createApp(App).use(router).use(i18n).mount('#app')
