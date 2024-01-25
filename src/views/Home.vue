@@ -89,5 +89,13 @@ article {
   margin-bottom: 2%;
   text-align: left;
 }
+@media only screen and (max-width: 767px) {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+  }
+}
 </style>
 

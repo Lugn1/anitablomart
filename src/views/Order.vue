@@ -87,5 +87,15 @@ article {
 .italic-article {
   font-style: italic;
 }
+@media only screen and (max-width: 767px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin-top: 2%;
+  }
+}
 
 </style>
