@@ -1,31 +1,12 @@
 <script setup>
-import { ref } from 'vue';
 import Social from "@/components/SocialBar.vue";
-import i18n from '@/i18n.js';
 
+import {useI18n} from "vue-i18n";
 
-
-const swedishFlagClicked = ref(i18n.locale === 'sv');
-const englishFlagClicked = ref(i18n.locale === 'en');
-
-const setLanguageToSwedish = () => {
-  i18n.locale = 'sv';
-  console.log('Swedish flag clicked');
-  swedishFlagClicked.value = true;
-  englishFlagClicked.value = false;
-
-};
-
-const setLanguageToEnglish = () => {
-  i18n.locale = 'en';
-  console.log('English flag clicked');
-  englishFlagClicked.value = true;
-  swedishFlagClicked.value = false;
-
-};
-
-defineExpose({ setLanguageToSwedish, setLanguageToEnglish });
-
+const { locale } = useI18n()
+const setLanguage = (language) => {
+  locale.value = language
+}
 </script>
 
 <template>
@@ -35,9 +16,19 @@ defineExpose({ setLanguageToSwedish, setLanguageToEnglish });
         <img src="../assets/signature-placeholder.png" alt="Signature">
       </div>
       <Social></Social>
-      <div class="flags">
-        <img :class="{ 'highlighted': swedishFlagClicked }" src="../assets/icons/sweden.png" alt="Swedish flag icon" @click="setLanguageToSwedish">
-        <img :class="{ 'highlighted': englishFlagClicked }" src="../assets/icons/united-kingdom.png" alt="UK flag icon" @click="setLanguageToEnglish">
+      <div  class="flags">
+        <img
+            :class="{ 'highlighted': $i18n.locale === 'sv' }"
+            src="../assets/icons/sweden.png"
+            alt="Swedish flag icon"
+            @click="setLanguage('sv')"
+        >
+        <img
+            :class="{ 'highlighted': $i18n.locale === 'en' }"
+            src="../assets/icons/united-kingdom.png"
+            alt="UK flag icon"
+            @click="setLanguage('en')"
+        >
       </div>
     </div>
     <div class="links-container">
