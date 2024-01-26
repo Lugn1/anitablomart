@@ -2,7 +2,6 @@ import { createI18n } from 'vue-i18n'
 import en from './locales/en.json'
 import sv from './locales/sv.json'
 
-
 function loadLocaleMessages() {
     const locales = [{ en: en }, { sv: sv }];
     const messages = {};
@@ -12,7 +11,6 @@ function loadLocaleMessages() {
     });
     return messages;
 }
-
 
 
 export default createI18n({
