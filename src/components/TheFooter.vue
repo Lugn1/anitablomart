@@ -6,12 +6,12 @@
 <section class="main-container">
   <article class="top-row-container">
     <div class="link-items">
-      <router-link to="/" active-class="active-link">Hem</router-link>
-      <router-link to="/gallery" active-class="active-link">Galleri</router-link>
-      <router-link to="/order" active-class="active-link">Beställa verk</router-link>
-      <router-link to="/blog" active-class="active-link">Blogg</router-link>
-      <router-link to="/about" active-class="active-link">Om mig</router-link>
-      <router-link to="/contact" active-class="active-link">Kontakt</router-link>
+      <router-link to="/" active-class="active-link">{{$t('Home')}}</router-link>
+      <router-link to="/gallery" active-class="active-link">{{$t('Gallery')}}</router-link>
+      <router-link to="/order" active-class="active-link">{{$t('Order works')}}</router-link>
+      <router-link to="/blog" active-class="active-link">{{$t('Blog')}}</router-link>
+      <router-link to="/about" active-class="active-link">{{$t('About')}}</router-link>
+      <router-link to="/contact" active-class="active-link">{{$t('Contact')}}</router-link>
     </div>
   </article>
   <article class="bottom-row-container">
