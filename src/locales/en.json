@@ -1,4 +1,5 @@
 {
+
   "Home": "Home",
   "Gallery": "Gallery",
   "Order works": "Order works",
@@ -10,6 +11,21 @@
   "HomeArticle2": "In particular, I am fascinated by birds, these light creatures that like to land on the canvas and become part of my artistic story. Their presence reinforces the message of freedom and ease in my work.",
   "HomeArticle3": "Here and there, other small living creatures appear in a painting that combines expressionism with the figurative.",
   "Price": "Price",
-  "AcrylicPainting": "Acrylic painting"
+  "AcrylicPainting": "Acrylic painting",
 
+  "OrderHeading": "Order a unique work of art",
+  "OrderArticle1": "Welcome to my world of semi-abstract art, where creativity and individuality come together to create unique and personal works of art. I offer you the opportunity to order a custom piece of art, created with my characteristic style that combines expressionism with subtle figurative elements.",
+
+  "OrderHeading2": "About my art style",
+  "OrderArticle2": "My art is a semi-abstract representation that gently meets figurative elements. Each brush stroke is one\n        key\n        to an expression, and each color choice carries an emotional charge. By combining the abstract with it\n        figuratively, I create works of art that both challenge and please the eye, and that can give different interpretations to each\n        observer.",
+
+  "OrderHeading3": "How the order works",
+  "OrderArticle3": "Ordering artwork from me is a personal and interactive process. We start with a dialogue where we discuss your ideas, preferences and expectations. It can be specific colors, themes or feelings you wish to convey through the artwork. Through this open communication, I strive to understand and incorporate your thoughts into my creation.",
+
+  "OrderHeading4": "Time aspect",
+  "OrderArticle4":"After our initial discussion and agreement on the concept, I will give you an estimate of the time it will take to complete the artwork. This can vary depending on size and complexity, but my aim is to deliver high quality art within a reasonable time frame.",
+
+  "OrderHeading5": "Why order a unique work of art?",
+  "OrderArticle5":"A custom piece of art is more than just a decorative detail in your home or office. It is a personal reflection of your taste, your history and your feelings. By investing in a unique piece of art, you get something that is all your own, a treasure that tells your story in a visual and creative way.",
+  "OrderArticle6": "Don't hesitate to get in touch to start our artistic dialogue and create something extraordinary together. Song\n        us to create art with meaning and depth that touches the soul."
 }
