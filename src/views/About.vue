@@ -4,7 +4,7 @@
 
 <template>
   <div class="main-container">
-    <h1>Om mig</h1>
+    <h1>{{$t('About')}}</h1>
     <div class="about">
       <div class="image-title-container">
         <p><img src='/src/assets/images/utställning.jpg' alt="Kolibri"></p>

@@ -5,37 +5,17 @@
 <template>
   <div class="home-container">
     <section class="intro-section">
-      <h1>Välkommen till Anita Blom Art</h1>
-      <article>Välkommen till min konstnärliga värld, där penseln blir mitt redskap
-
-        för att gestalta naturens magi. Målningarna är en hyllning till den
-
-        storslagna skönhet som naturen omger oss med.
-
-        Min önskan är att mina alster kan påminna betraktaren om att det
-
-        finns en värld bortom vår hektiska vardag. En värld fylld av
-
-        fridfull skönhet och enkel glädje som bara väntar på att bli upptäckt och
-
-        omfamnad.
-
-        Jag tror på naturens osynliga kraft att läka och ge energi.
+      <h1>{{$t('Welcome')}}</h1>
+      <article>
+        {{$t('HomeArticle1')}}
       </article>
 
       <article>
-        I synnerhet fascineras jag av fåglar, dessa lätta varelser som gärna landar på
-
-        duken och blir en del av min konstnärliga berättelse. Deras närvaro förstärker
-
-        budskapet om frihet och lätthet i mitt arbete.
+        {{$t('HomeArticle2')}}
       </article>
 
       <article>
-
-        Här och var dyker andra små levande varelser upp i en målning som
-
-        kombinerar expressionism med det figurativa.
+        {{$t('HomeArticle3')}}
       </article>
       <!--      <router-link to="/gallery">Utforska Galleriet</router-link>-->
     </section>
