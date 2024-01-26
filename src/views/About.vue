@@ -6,6 +6,7 @@
   <div class="main-container">
     <h1>{{$t('About')}}</h1>
     <div class="about">
+      <div class="firstParagraph" >
       <div class="image-title-container">
         <p><img src='/src/assets/images/utställning.jpg' alt="Kolibri"></p>
         <p class="image-title">{{$t('AboutImageText')}}</p>
@@ -95,19 +96,30 @@ p {
 }
 @media only screen and (max-width: 767px) {
   .about {
-    width: 100%; /* Adjust the width as needed for smaller screens */
+    width: 100%;
+    flex-direction: column-reverse;
   }
 
   .about img {
-    float: none; /* Center the image on smaller screens */
-    margin: 10px auto; /* Adjust margin as needed */
-    display: block;
+    float: none;
+    margin: 10px auto;
     width: auto;
-    height: 170px;
+    height: 300px;
   }
 
   .educations {
-    width: 100%; /* Adjust the width as needed for smaller screens */
+    width: 100%;
+  }
+  .image-title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%
+  }
+  .firstParagraph {
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 
