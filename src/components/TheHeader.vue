@@ -19,14 +19,12 @@ const setLanguage = (language) => {
       <div  class="flags">
         <img
             :class="{ 'highlighted': $i18n.locale === 'sv' }"
-            v-if="$i18n.locale === 'en'"
             src="../assets/icons/sweden.png"
             alt="Swedish flag icon"
             @click="setLanguage('sv')"
         >
         <img
             :class="{ 'highlighted': $i18n.locale === 'en' }"
-            v-if="$i18n.locale === 'sv'"
             src="../assets/icons/united-kingdom.png"
             alt="UK flag icon"
             @click="setLanguage('en')"
