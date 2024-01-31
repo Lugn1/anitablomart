@@ -1,0 +1,51 @@
+{
+
+  "Home": "Home",
+  "Gallery": "Gallery",
+  "Order works": "Order works",
+  "Blog": "Blog",
+  "About": "About me",
+  "Contact": "Contact",
+  "Welcome": "Welcome to Anita Blom Art",
+  "HomeArticle1": "Welcome to my artistic world, where the brush becomes my tool to portray the magic of nature. The paintings are a tribute to the magnificent beauty that nature surrounds us with. My wish is that my creations can remind the viewer that there is a world beyond our busy everyday life. A world filled with peaceful beauty and simple joy just waiting to be discovered and embraced. I believe in nature's invisible power to heal and energize.\nIn particular,\n\n I am fascinated by birds, these light creatures that like to land on the canvas and become part of my artistic story. Their presence reinforces the message of freedom and ease in my work.\nHere and there, other small living creatures appear in a painting that combines expressionism with the figurative.",
+  "HomeArticle2": "In particular, I am fascinated by birds, these light creatures that like to land on the canvas and become part of my artistic story. Their presence reinforces the message of freedom and ease in my work.",
+  "HomeArticle3": "Here and there, other small living creatures appear in a painting that combines expressionism with the figurative.",
+  "Price": "Price",
+  "AcrylicPainting": "Acrylic painting",
+
+  "OrderHeading": "Order a unique work of art",
+  "OrderArticle1": "Welcome to my world of semi-abstract art, where creativity and individuality come together to create unique and personal works of art. I offer you the opportunity to order a custom piece of art, created with my characteristic style that combines expressionism with subtle figurative elements.",
+
+  "OrderHeading2": "About my art style",
+  "OrderArticle2": "My art is a semi-abstract representation that gently meets figurative elements. Each brush stroke is one\n        key\n        to an expression, and each color choice carries an emotional charge. By combining the abstract with it\n        figuratively, I create works of art that both challenge and please the eye, and that can give different interpretations to each\n        observer.",
+
+  "OrderHeading3": "How the order works",
+  "OrderArticle3": "Ordering artwork from me is a personal and interactive process. We start with a dialogue where we discuss your ideas, preferences and expectations. It can be specific colors, themes or feelings you wish to convey through the artwork. Through this open communication, I strive to understand and incorporate your thoughts into my creation.",
+
+  "OrderHeading4": "Time aspect",
+  "OrderArticle4":"After our initial discussion and agreement on the concept, I will give you an estimate of the time it will take to complete the artwork. This can vary depending on size and complexity, but my aim is to deliver high quality art within a reasonable time frame.",
+
+  "OrderHeading5": "Why order a unique work of art?",
+  "OrderArticle5":"A custom piece of art is more than just a decorative detail in your home or office. It is a personal reflection of your taste, your history and your feelings. By investing in a unique piece of art, you get something that is all your own, a treasure that tells your story in a visual and creative way.",
+  "OrderArticle6": "Don't hesitate to get in touch to start our artistic dialogue and create something extraordinary together. Song\n        us to create art with meaning and depth that touches the soul.",
+  "ComingSoon": "Coming soon",
+  "AboutImageText": "Me with my hummingbird on display at...",
+  "AboutP1": "I have had my artistic interest with me since I grew up. My father was the carpenter who could also sing, cook\n        food, carve old men and draw images with a pencil. My mother was good at all things needlework.",
+  "AboutP2": "A move to the countryside in my early teens made me a true nature lover. Lake plot with meadows and forest. Nature became my \"Lisa for the soul\". The love for nature is what leaves an impression in my paintings.",
+  "AboutP3": "I also made a journey into singing and dancing full time for a few years.",
+  "AboutP4": "After children and education with a profession as a district nurse, the dream has been there to give my\n        artistic soul more space.",
+  "AboutP5": "Then came a request in 2012 if I wanted to join a watercolor course in Provence and without hesitation I said YES,\n        absolutely. And then it just continued. There were courses in oil painting where we initially created paintings\n        inspired by the great artists for learning purposes. Very instructive.",
+  "AboutP6": "In retrospect, I noticed that it became too much of my inner perfectionist that steered me towards a precise and \"perfect\" (poking) that I wanted to try another way of painting. Continued with a couple of watercolor courses but also did not get rid of my inner perfectionist and did not find out from it.",
+  "AboutP7": "Then the acrylic paint came in and I landed. Here I can paint layer upon layer the same day and can more easily achieve\n        semi-abstract some more exciting paintings with it and then paint realistic \"elements\" into this.",
+  "AboutHeader2": "Courses",
+  "Course1": "Watercolor - Artist Margareta Sölveland, Artist Ali Pournoroozy",
+  "Course2": "Oil painting - Artist Kristina Frenguelli",
+  "Course3": "Medium – Art College Göteborg",
+  "Course4": "Acrylic painting – Artist Ania Witwitzka",
+  "ContactHeader": "Fill out the form and send and I'll respond as soon as I can",
+  "NameLabel": "Name:",
+  "EmailLabel": "E-mail",
+  "SubjectLabel": "Subject:",
+  "MessageLabel": "Message:",
+  "SubmitLabel": "Send"
+}

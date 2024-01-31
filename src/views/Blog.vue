@@ -4,9 +4,9 @@
 
 <template>
   <div class="main-container">
-    <h1>Blogg</h1>
+    <h1>{{$t('Blog')}}</h1>
     <div class="posts">
-        <p>Kommer snart</p>
+        <p>{{$t('ComingSoon')}}</p>
     </div>
   </div>
 </template>
