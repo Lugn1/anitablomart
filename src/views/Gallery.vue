@@ -18,7 +18,7 @@ const closePopup = () => {
 
 <template>
   <div class="main-container">
-    <h1>Galleri</h1>
+    <h1>{{$t('Gallery')}}</h1>
     <div class="artworks">
       <div class="bottom-row">
         <div class="art-item" @click="openPopup('../assets/images/cropped/himmel-hav-cropped.jpg')">
@@ -61,8 +61,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Skärgårdens serenad</h3>
-        <p>Akyrlmålning 50x50</p>
-        <p>Pris: 4000 SEK</p>
+        <p>{{$t('AcrylicPainting')}} 50x50</p>
+        <p>{{$t('Price')}}: 4000 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -71,8 +71,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Kraften i naturens stilla dans</h3>
-        <p>Akyrlmålning 45x55</p>
-        <p>Pris: 4000 SEK</p>
+        <p>{{$t('AcrylicPainting')}} 45x55</p>
+        <p>{{$t('Price')}}: 4000 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -81,8 +81,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Stormens dans</h3>
-        <p>Akyrlmålning 38x45</p>
-        <p>Pris: 3300 SEK</p>
+        <p>{{$t('AcrylicPainting')}} 38x45</p>
+        <p>{{$t('Price')}}: 3300 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -91,8 +91,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Ska vi gå och bada</h3>
-        <p>Akyrlmålning 60x80</p>
-        <p>Pris: 5600 SEK</p>
+        <p>{{$t('AcrylicPainting')}} 60x80</p>
+        <p>{{$t('Price')}}: 5600 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -101,8 +101,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Två hjärtan, Två horisonter</h3>
-        <p>Akyrlmålning</p>
-        <p>Pris: ---- SEK</p>
+        <p>{{$t('AcrylicPainting')}}</p>
+        <p>{{$t('Price')}}: ---- SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -111,8 +111,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Kom så flyger vi</h3>
-        <p>Akyrlmålning 40x50</p>
-        <p>Pris: 3600 SEK</p>
+        <p>{{$t('AcrylicPainting')}} 40x50</p>
+        <p>{{$t('Price')}}: 3600 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -121,8 +121,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Egentid</h3>
-        <p>Akyrlmålning 50x40</p>
-        <p>Pris: 3600 SEK</p>
+        <p>{{$t('AcrylicPainting')}} 50x40</p>
+        <p>{{$t('Price')}}: 3600 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -131,8 +131,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Ska vi leka</h3>
-        <p>Akyrlmålning 50x40</p>
-        <p>Pris: 3600 SEK</p>
+        <p>{{$t('AcrylicPainting')}} 50x40</p>
+        <p>{{$t('Price')}}: 3600 SEK</p>
       </div>
     </div>
     <div v-if="showPopup" class="popup" @click="closePopup">

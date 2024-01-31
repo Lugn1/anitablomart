@@ -7,30 +7,30 @@ const handleSubmit = () => {
 
 <template>
   <div>
-    <h1>Kontakt</h1>
-    <h4>Fyll i formuläret och skicka så svarar jag så fort jag kan</h4>
+    <h1>{{$t('Contact')}}</h1>
+    <h4>{{$t('ContactHeader')}}</h4>
     <form @submit.prevent="handleSubmit">
       <div class="form-group">
-        <label for="name">Namn:</label>
+        <label for="name">{{$t('NameLabel')}}</label>
         <input type="text" id="name" name="name" required>
       </div>
 
       <div class="form-group">
-        <label for="email">E-post:</label>
+        <label for="email">{{$t('EmailLabel')}}</label>
         <input type="email" id="email" name="email" required>
       </div>
 
       <div class="form-group">
-        <label for="subject">Ämne:</label>
+        <label for="subject">{{$t('SubjectLabel')}}</label>
         <input type="text" id="subject" name="subject" required>
       </div>
 
       <div class="form-group">
-        <label for="message">Meddelande:</label>
+        <label for="message">{{$t('MessageLabel')}}</label>
         <textarea id="message" name="message" required></textarea>
       </div>
 
-      <button type="submit">Skicka</button>
+      <button type="submit">{{$t('SubmitLabel')}}</button>
     </form>
   </div>
 </template>
