@@ -1,11 +1,10 @@
 <script setup>
-import { reactive, ref} from 'vue';
+import { reactive, ref } from 'vue';
+import { useI18n } from 'vue-i18n';
 
+const { t } = useI18n();
 
-const emailAccessKey = "185ff84d-4f6c-4e2b-822b-fffb390988b4";
-
-const popupMessage = ref('');
-const showPopup = ref(false);
+const WEB3FORMS_ACCESS_KEY = "185ff84d-4f6c-4e2b-822b-fffb390988b4";
 
 const state = reactive({
   name: "",
@@ -13,6 +12,9 @@ const state = reactive({
   subject: "",
   message: "",
 });
+
+const popupMessage = ref('');
+const showPopup = ref(false);
 
 async function submitEvent() {
   try {
@@ -23,7 +25,7 @@ async function submitEvent() {
         Accept: "application/json",
       },
       body: JSON.stringify({
-        access_key: emailAccessKey ,
+        access_key: WEB3FORMS_ACCESS_KEY,
         name: state.name,
         email: state.email,
         subject: state.subject,
@@ -33,17 +35,16 @@ async function submitEvent() {
     const result = await response.json();
 
     if (result.success) {
-      popupMessage.value = 'Meddelandet har skickats framgångsrikt!';
-
+      popupMessage.value = t('SendSuccess');
       state.name = '';
       state.email = '';
       state.subject = '';
       state.message = '';
     } else {
-      popupMessage.value = 'Det gick inte att skicka meddelandet. Försök igen senare.';
+      popupMessage.value = t('SendError1');
     }
   } catch (error) {
-    popupMessage.value = 'Ett fel inträffade. Kontrollera din internetanslutning.';
+    popupMessage.value = t('SendError2');
   }
   showPopup.value = true;
   setTimeout(() => {
@@ -56,25 +57,25 @@ async function submitEvent() {
   <div>
     <h1>{{$t('Contact')}}</h1>
     <h4>{{$t('ContactHeader')}}</h4>
-    <form @submit.prevent="handleSubmit">
+    <form @submit.prevent="submitEvent">
       <div class="form-group">
         <label for="name">{{$t('NameLabel')}}</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" v-model="state.name" required>
       </div>
 
       <div class="form-group">
         <label for="email">{{$t('EmailLabel')}}</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" v-model="state.email" required>
       </div>
 
       <div class="form-group">
         <label for="subject">{{$t('SubjectLabel')}}</label>
-        <input type="text" id="subject" name="subject" required>
+        <input type="text" id="subject" v-model="state.subject" required>
       </div>
 
       <div class="form-group">
         <label for="message">{{$t('MessageLabel')}}</label>
-        <textarea id="message" name="message" required></textarea>
+        <textarea id="message" v-model="state.message" required></textarea>
       </div>
 
       <button type="submit">{{$t('SubmitLabel')}}</button>

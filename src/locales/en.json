@@ -43,9 +43,13 @@
   "Course3": "Medium – Art College Göteborg",
   "Course4": "Acrylic painting – Artist Ania Witwitzka",
   "ContactHeader": "Fill out the form and send and I'll respond as soon as I can",
+
   "NameLabel": "Name:",
   "EmailLabel": "E-mail",
   "SubjectLabel": "Subject:",
   "MessageLabel": "Message:",
-  "SubmitLabel": "Send"
+  "SubmitLabel": "Send",
+  "SendSuccess": "The message has been sent successfully!!",
+  "SendError1": "The message could not be sent. Try again later.",
+  "SendError2": "An error occurred. Please check your internet connection."
 }
