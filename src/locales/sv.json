@@ -45,7 +45,10 @@
   "EmailLabel": "E-post:",
   "SubjectLabel": "Ämne:",
   "MessageLabel": "Meddelande:",
-  "SubmitLabel": "Skicka"
+  "SubmitLabel": "Skicka",
+  "SendSuccess": "Meddelandet har skickats framgångsrikt!",
+  "SendError1": "Det gick inte att skicka meddelandet. Försök igen senare.",
+  "SendError2": "Ett fel inträffade. Kontrollera din internetanslutning."
 
 
 }
