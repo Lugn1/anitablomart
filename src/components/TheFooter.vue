@@ -87,7 +87,7 @@
   align-items: center;
   gap: 10px;
   margin-top: 12px;
-  width: 60%;
+  width: 100%;
   text-decoration: none;
 }
 
@@ -95,5 +95,6 @@
   text-decoration: none;
   color: #333;
 }
+
 
 </style>

@@ -6,7 +6,7 @@ import TheFooter from "@/components/TheFooter.vue";
 </script>
 
 <template>
-  <div class="main-container">
+  <section class="main-container">
     <div class="main-header">
       <TheHeader></TheHeader>
     </div>
@@ -22,7 +22,7 @@ import TheFooter from "@/components/TheFooter.vue";
       </router-view>
     </div>
     <TheFooter></TheFooter>
-  </div>
+  </section>
 </template>
 
 <style>
@@ -32,7 +32,6 @@ import TheFooter from "@/components/TheFooter.vue";
   flex-direction: column;
   height: 100%;
   width: 100%;
-  margin-top: 6px;
 }
 
 .fade-enter-active {
@@ -52,6 +51,7 @@ import TheFooter from "@/components/TheFooter.vue";
 .view {
   display: flex;
   justify-content: center;
+  margin-top: 1%;
 }
 
 .mobile-header {
@@ -62,16 +62,27 @@ import TheFooter from "@/components/TheFooter.vue";
   display: block;
 }
 
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
 
 @media only screen and (max-width: 428px) {
 
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.2em;
+  }
+
   .mobile-header {
     display: block;
-    margin-top: 5%;
-    margin-left: 5%;
-    height: 32px;
-    width: 32px;
-
   }
 
   .main-header {

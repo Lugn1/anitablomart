@@ -51,7 +51,6 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
 }
 
 .router-link {

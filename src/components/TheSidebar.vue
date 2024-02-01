@@ -51,7 +51,7 @@ export default {
 <style scoped>
 
 .sidebar {
-  background-color: rgba(30, 140, 60, 70%);
+  background-color: rgb(30, 140, 60);
   float: left;
   position: fixed;
   z-index: 1;
@@ -107,7 +107,7 @@ export default {
 
 /* Enter transition */
 .slide-enter-active {
-  transition: all 0.3s ease-out;
+  transition: all 0.3s ease-in;
 }
 .slide-enter-from {
   transform: translateX(-100%);

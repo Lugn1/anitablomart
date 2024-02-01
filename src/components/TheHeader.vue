@@ -46,14 +46,13 @@ const setLanguage = (language) => {
 
 <style scoped>
 
-.highlighted {
-  box-shadow: 0 0 10px rgba(30, 140, 60, 70%); ; /* Change as needed */
-}
+
 .main-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
 }
 
 .main-container img {
@@ -108,6 +107,11 @@ const setLanguage = (language) => {
   width: 6%;
   gap: 15%;
 }
+
+.flags img {
+  cursor: pointer;
+}
+
 
 .link-items .active-link {
   color: navy;

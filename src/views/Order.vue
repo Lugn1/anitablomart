@@ -46,7 +46,6 @@
   justify-content: center;
   align-items: center;
   width: 40%;
-  margin-top: 2%;
 }
 
 section {
@@ -54,6 +53,8 @@ section {
   text-align: left;
   flex-direction: column;
 }
+
+
 
 article {
   display: flex;

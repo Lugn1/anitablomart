@@ -6,12 +6,12 @@
   <div class="main-container">
     <h1>{{$t('About')}}</h1>
     <div class="about">
-      <div class="firstParagraph" >
       <div class="image-title-container">
         <p><img src='/src/assets/images/utställning.jpg' alt="Kolibri"></p>
         <p class="image-title">{{$t('AboutImageText')}}</p>
       </div>
-          <p>
+      <div class="firstParagraph" >
+          <p id="about-first">
             {{$t('AboutP1')}}
           </p>
 
@@ -60,6 +60,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
 }
 
 .about {
@@ -71,7 +72,6 @@
   width: auto;
   height: 500px;
   margin-left: 24px;
-  margin-top: 10px;
   float: right;
 
 }
