@@ -1,20 +1,16 @@
 {
-
   "Home": "Hem",
   "Gallery": "Galleri",
   "Order works": "Beställ verk",
   "Blog": "Blogg",
   "About": "Om mig",
   "Contact": "Kontakt",
-
   "Welcome": "Välkommen till Anita Blom Art",
   "HomeArticle1": "Välkommen till min konstnärliga värld, där penseln blir mitt redskap\n\n för att gestalta naturens magi. Målningarna är en hyllning till den\n\n        storslagna skönhet som naturen omger oss med.\n\n Min önskan är att mina alster kan påminna betraktaren om att det\n\n finns en värld bortom vår hektiska vardag. En värld fylld av\n\n fridfull skönhet och enkel glädje som bara väntar på att bli upptäckt och omfamnad.  Jag tror på naturens osynliga kraft att läka och ge energi.",
   "HomeArticle2": "I synnerhet fascineras jag av fåglar, dessa lätta varelser som gärna landar på duken och blir en del av min konstnärliga berättelse. Deras närvaro förstärker budskapet om frihet och lätthet i mitt arbete.",
   "HomeArticle3": "Här och var dyker andra små levande varelser upp i en målning som kombinerar expressionism med det figurativa.",
-
   "Price": "Pris",
   "AcrylicPainting": "Akrylmålning",
-
   "OrderHeading": "Beställa ett unikt konstverk",
   "OrderArticle1": "Välkommen till min värld av halvabstrakt konst, där kreativitet och individualitet förenas för att skapa unika och personliga konstverk. Jag erbjuder dig möjligheten att beställa ett skräddarsytt konstverk, skapat med min karakteristiska stil som kombinerar expressionism med subtila figurativa element.",
   "OrderHeading2": "Om min konststil",
@@ -28,18 +24,19 @@
   "OrderArticle6": "Tveka inte att ta kontakt för att inleda vår konstnärliga dialog och skapa något extraordinärt tillsammans. Låt\n        oss skapa konst med mening och djup som berör själen.",
   "ComingSoon": "Kommer snart",
   "AboutImageText": "Jag med min kolibri på utställning på ...",
-  "AboutP1": "Mitt konstnärliga intresse har jag med mig från min uppväxt. Min far var snickaren som också kunde sjunga, laga\n        mat, tälja gubbar och rita avbildande med blyerts. Min mor var duktig på allt med handarbeten.",
-  "AboutP2": "En flytt ut på landet under tidig tonårstid gjorde mig till en verklig naturälskare. Sjötomt med ängar och skog. Naturen blev min ”Lisa för själen”. Kärleken för naturen är vad som lämnar avtryck ut i mina målningar.",
-  "AboutP3": "Jag gjorde också en resa i att sjunga och dansa på heltid under några år.",
-  "AboutP4": "Efter barn och utbildningar med ett yrke som distriktssköterska har drömmen funnits där om att få ge min\n        konstnärssjäl mer utrymme.",
-  "AboutP5": "Så kom en förfrågan 2012 om jag ville följa med på en akvarellkurs i Provence och utan tvekan sa jag JA,\n        absolut. Och sedan har det bara fortsatt. Det blev kurser i oljemålning där vi till en början skapade målningar\n        inspirerat utifrån de stora konstnärerna i lärande syfte. Mycket lärorikt.",
-  "AboutP6": "I efterhand märkte jag att det blev för mycket av min inre perfektionist som styrde mig åt för ett precist och ”perfekt” (petande) att jag ville pröva annat sätt att måla på. Fortsatte med ett par akvarellkurser men blev inte heller där fri från min inre perfektionist och hittade inte ut från det.",
-  "AboutP7": "Sedan kom akrylfärgen in och jag landade. Här kan jag måla lager på lager samma dag och kan lättare få till\n        halvabstrakt lite mer spännande målningar med det och sedan måla in realistiska ”element” i detta.",
-  "AboutHeader2": "Kurser",
-  "Course1": "Akvarell – Konstnär Margareta Sölveland, Konstnär Ali Pournoroozy",
-  "Course2": "Oljemålning – Konstnär Kristina Frenguelli",
-  "Course3": "Medium – Art College Göteborg",
+  "AboutP1": "Mitt konstnärliga intresse har varit min följeslagare ända sedan barndomen. En värld av mångsidighet skapades av min far, som byggde hus, kunde sjunga, laga mat, tälja gubbar och skickligt kunde rita avbildande med blyerts. Min mor var mästerlig på allt med handarbeten vilket ytterligare fördjupade min förståelse för konstens många nyanser.",
+  "AboutP2": "En flytt till landsbygden under tidig tonårstid öppnade en värld av ängar, skog och vatten. Naturen blev min fristad, min ”Lisa för själen”. Kärleken för naturen är vad som lämnar avtryck ut i mina målningar.",
+  "AboutP3": "En period av hängivenhet till att dansa och sjunga på heltid följde efter gymnasiet. Där fann jag ett kreativt uttryckssätt och en känslomässig frigörelse.",
+  "AboutP4": "Längtan efter barn kom och som förstföderska blev jag sedan mor till trillingar och ytterligare ett barn. Med ett yrke som distriktssköterska har drömmen alltid legat på om att få ge min konstnärssjäl mer utrymme. ",
+  "AboutP5": "2012 kom förfrågan om jag ville följa med på en akvarellkurs i Provence och utan tvekan sa jag JA. Och sedan har det bara fortsatt. Det blev kurser i oljemålning där vi studerade mästerverk skapade av de stora konstnärerna i studiesyfte. Det var en lärandeprocess som styrde min inre perfektionist mot perfektion och precision.",
+  "AboutP6": "Ett halvår på Art College i Göteborg innehöll för mig mycket utanför det jag ville skapa och göra, men som all erfarenhet byggde detta på min förståelse ytterligare.",
+  "AboutP7": "Efter att kort även provat på akvarellmålning fann jag så äntligen mitt konstnärliga paradis i akrylfärgerna. Här kan jag måla lager på lager samma dag då torktiden är snabb. Jag känner mig mer fri och akrylen öppnade upp en värld för mig där jag för samman leken för vad som ”kan hända” med det uppenbara synliga som mer planerat, målas in i denna värld. Jag ger utrymme således för både lekande, perfektion, höger och vänster hjärnhalva. Och jag har roligt!!",
+  "AboutHeader2": "Utbildning - Kurser",
+  "Course1": "Art College Göteborg",
+  "Course2": "Akvarell – Konstnär Margareta Sölveland, Konstnär Ali Pournoroozy",
+  "Course3": "Oljemålning – Konstnär Kristina Frenguelli",
   "Course4": "Akrylmålning – Konstnär Ania Witwitzka",
+  "Course5": "Flertal workshops i måleriets gemenskap",
   "ContactHeader": "Fyll i formuläret och skicka så svarar jag så fort jag kan",
   "NameLabel": "Namn:",
   "EmailLabel": "E-post:",
@@ -49,6 +46,4 @@
   "SendSuccess": "Meddelandet har skickats framgångsrikt!",
   "SendError1": "Det gick inte att skicka meddelandet. Försök igen senare.",
   "SendError2": "Ett fel inträffade. Kontrollera din internetanslutning."
-
-
 }

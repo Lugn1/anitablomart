@@ -41,6 +41,8 @@
           {{$t('Course3')}}
           <br>
           {{$t('Course4')}}
+          <br>
+          {{$t('Course5')}}
       </h4>
 
     </div>
