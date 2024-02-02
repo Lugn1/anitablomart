@@ -54,7 +54,7 @@ async function submitEvent() {
 </script>
 
 <template>
-  <div>
+  <section>
     <h1>{{$t('Contact')}}</h1>
     <h4>{{$t('ContactHeader')}}</h4>
     <form @submit.prevent="submitEvent">
@@ -83,7 +83,7 @@ async function submitEvent() {
     <div v-if="showPopup" class="popup">
       {{ popupMessage }}
     </div>
-  </div>
+  </section>
 </template>
 
 

@@ -39,7 +39,7 @@
   width: 100%;
   height: 75px;
   margin-top: 5%;
-  margin-bottom: -1%;
+  box-sizing: border-box;
 
 }
 
@@ -94,6 +94,19 @@
 .link-items a {
   text-decoration: none;
   color: #333;
+}
+
+@media only screen and (max-width: 800px) {
+  .main-container {
+    height: 100px;
+    margin-top: 10%;
+  }
+  .link-items {
+    gap: 5px;
+  }
+  .social-links {
+    gap: 10px;
+  }
 }
 
 

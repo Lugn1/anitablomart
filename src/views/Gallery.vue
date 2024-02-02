@@ -19,42 +19,6 @@ const closePopup = () => {
 <template>
   <div class="main-container">
     <h1>{{$t('Gallery')}}</h1>
-    <div class="artworks">
-      <div class="bottom-row">
-        <div class="art-item" @click="openPopup('../assets/images/cropped/himmel-hav-cropped.jpg')">
-          <img src='../assets/images/himmel-hav.jpg' alt="Skärgårdens serenad">
-        </div>
-        <div class="art-item" @click="openPopup('../assets/images/fiskmas-1.jpg')">
-          <img src='../assets/images/fiskmas-1.jpg' alt="Kraften i naturens stilla dans">
-        </div>
-        <div class="art-item" @click="openPopup('../assets/images/fiskmas-2.jpg')">
-          <img src='../assets/images/fiskmas-2.jpg' alt="Stormens dans">
-        </div>
-      </div>
-    </div>
-    <div class="artworks">
-      <div class="bottom-row">
-        <div class="art-item">
-          <img src='../assets/images/fiskmas-ljus.jpg' alt="Ska vi gå och bada">
-        </div>
-        <div class="art-item">
-          <img src='../assets/images/fiskmas-ljus2.jpg' alt="Två hjärtan, Två horisonter">
-        </div>
-      </div>
-    </div>
-    <div class="artworks">
-      <div class="bottom-row">
-        <div class="art-item">
-          <img src='../assets/images/Kom-sa-flyger-vi.jpg' alt="Two birds playing">
-        </div>
-        <div class="art-item">
-          <img src='../assets/images/egentid.jpg' alt="A lone bird">
-        </div>
-        <div class="art-item">
-          <img src='../assets/images/ska-vi-leka.jpg' alt="Bird asking the other to play">
-        </div>
-      </div>
-    </div>
     <div class="item-container">
       <div class="item-img">
         <img src='../assets/images/himmel-hav.jpg' alt="Skärgårdens serenad">
@@ -156,7 +120,6 @@ const closePopup = () => {
   width: 40%;
   justify-content: center;
   align-content: center;
-
 }
 
 .art-item {
@@ -167,7 +130,7 @@ const closePopup = () => {
 
 }
 
-.bottom-row .art-item {
+.art-row .art-item {
   width: 100%;
   height: 100%;
   align-content: center;
@@ -175,7 +138,7 @@ const closePopup = () => {
 }
 
 
-.bottom-row .art-item img {
+.art-row .art-item img {
   max-width: 100%;
   max-height: 100%;
   width: 100%;

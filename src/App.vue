@@ -7,21 +7,23 @@ import TheFooter from "@/components/TheFooter.vue";
 
 <template>
   <section class="main-container">
-    <div class="main-header">
+    <section class="main-header">
       <TheHeader></TheHeader>
-    </div>
-    <div class="mobile-header">
+    </section>
+    <section class="mobile-header">
       <MobileHeader/>
       <Sidebar/>
-    </div>
-    <div class="view">
+    </section>
+    <article class="view">
       <router-view v-slot="{ Component }">
         <transition name="fade" mode="out-in">
           <component :is="Component"/>
         </transition>
       </router-view>
-    </div>
+    </article>
+    <section class="footer">
     <TheFooter></TheFooter>
+    </section>
   </section>
 </template>
 

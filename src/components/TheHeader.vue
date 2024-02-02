@@ -79,7 +79,7 @@ const setLanguage = (language) => {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100.9%;
+  width: 100%;
   left: 0;
   background-color: rgba(30, 140, 60, 70%);
 }
