@@ -37,7 +37,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 75px;
+  height: 50px;
   margin-top: 5%;
   box-sizing: border-box;
 
@@ -58,9 +58,9 @@
   background-color: rgb(200, 200, 200);
   align-items: center;
   width: 100%;
-  height: 100%;
+  height: 80%;
   margin-top: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 35px;
   gap: 3%;
 }
 
@@ -102,10 +102,19 @@
     margin-top: 10%;
   }
   .link-items {
-    gap: 5px;
+    gap: 3%;
   }
   .social-links {
     gap: 10px;
+  }
+
+  .bottom-row-container {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+
+  .top-row-container {
+    margin-bottom: 0;
   }
 }
 

@@ -99,15 +99,18 @@ p {
 }
 @media only screen and (max-width: 767px) {
   .about {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    flex-direction: column-reverse;
   }
 
   .about img {
-    float: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 10px auto;
     width: auto;
-    height: 300px;
+    height: 400px;
   }
 
   .educations {

@@ -15,7 +15,9 @@ const setLanguage = (language) => {
       <div class="signature-container">
         <img src="../assets/signature-placeholder.png" alt="Signature">
       </div>
+      <div class="social-container">
       <Social></Social>
+      </div>
       <div  class="flags">
         <img
             :class="{ 'highlighted': $i18n.locale === 'sv' }"
@@ -67,6 +69,11 @@ const setLanguage = (language) => {
   object-position: bottom;
 }
 
+.social-container {
+  margin-right: 1%;
+  margin-top: 5px;
+}
+
 .top-container {
   display: flex;
   justify-content: center;
@@ -106,6 +113,7 @@ const setLanguage = (language) => {
   display: flex;
   width: 6%;
   gap: 15%;
+
 }
 
 .flags img {

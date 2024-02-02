@@ -73,15 +73,7 @@ h2 {
 }
 
 
-@media only screen and (max-width: 428px) {
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  h2 {
-    font-size: 1.2em;
-  }
+@media only screen and (max-width: 850px ) {
 
   .mobile-header {
     display: block;
@@ -89,7 +81,13 @@ h2 {
 
   .main-header {
     display: none;
+
   }
 }
+
+
+
+
+
 
 </style>

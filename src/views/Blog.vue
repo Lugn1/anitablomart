@@ -7,14 +7,14 @@
     <h1>{{$t('Blog')}}</h1>
     <div class="posts">
         <p>{{$t('ComingSoon')}}</p>
+
     </div>
   </div>
 </template>
 
 <style scoped>
 .main-container {
-  width: 100%;
-  height: 100%;
+  width: 80%;
   text-align: center;
 }
 

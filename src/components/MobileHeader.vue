@@ -48,29 +48,38 @@ const setLanguage = (language) => {
   justify-content: center;
   width: 100%;
   height: 100%;
-
 }
-
-
 
 .line {
-  border-bottom: 5px solid rgba(30, 140, 60, 70%);
-  margin-top: 3%;
-  border-radius: 1%;
+  border-bottom: 2px solid rgba(30, 140, 60, 70%);
+  margin-top: 5%;
+
 }
 
-.content {
-  width: 95%;
+.hamburger-menu {
   display: flex;
+  justify-content: center;
+  width: 10%;
+  margin-left: 2%;
+}
+
+
+
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
 }
 
 .flags {
   display: flex;
+  justify-content: center;
+  width: 20%;
   gap: 15%;
-  width: 10%;
   height: 100%;
+  margin-right: 2%;
 
 }
 
@@ -80,6 +89,7 @@ const setLanguage = (language) => {
   object-fit: contain;
   display: flex;
   justify-content: center;
+  margin-top: 2%;
 
 }
 
@@ -90,9 +100,12 @@ const setLanguage = (language) => {
 
 
 .flags img {
-  width: auto;
-  max-height: 25px;
+  width: 30%;
   object-fit: cover;
 }
 
+
+
+
 </style>
+
