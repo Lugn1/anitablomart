@@ -20,34 +20,17 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: transparent;
-  margin-right: 8%;
-  gap: 12%;
-  border-bottom: 2px solid rgba(30, 140, 60, 0.5%);
+  max-width: 50%;
+  gap: 10%;
+}
+
+.SocialContainer a {
+  width: 100%;
 }
 
 .SocialContainer img {
-  width: auto;
-  max-height: 30px;
-  object-fit: cover;
+  max-width: 100%;
 }
 
-.InstaButton {
-  background: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  color: white;
-  font-family: "Arsenal", sans-serif;
-  padding: 5px 10px;
-  margin-top: 5px;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  outline: none;
-  transition: background 0.3s ease;
-}
-
-.InstaButton:hover {
-  background: linear-gradient(to right, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
-  filter: brightness(1.2);
-}
 
 </style>

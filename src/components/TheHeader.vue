@@ -70,8 +70,11 @@ const setLanguage = (language) => {
 }
 
 .social-container {
-  margin-right: 1%;
   margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
 }
 
 .top-container {
