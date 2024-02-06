@@ -19,19 +19,19 @@ const closePopup = () => {
 <template>
   <div class="main-container">
     <h1>{{$t('Gallery')}}</h1>
-    <div class="item-container">
+    <div class="item-container"  @click="openPopup('src/assets/images/cropped/himmel-hav-cropped.jpg')">
       <div class="item-img">
-        <img src='../assets/images/himmel-hav.jpg' alt="Skärgårdens serenad">
+        <img src='../assets/images/cropped/himmel-hav-cropped.jpg' alt="Skärgårdens serenad">
       </div>
-      <div class="item-info">
+      <div class="item-info" >
         <h3>Skärgårdens serenad</h3>
         <p>{{$t('AcrylicPainting')}} 50x50</p>
         <p>{{$t('Price')}}: 4000 SEK</p>
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img">
-        <img src='../assets/images/fiskmas-1.jpg' alt="Kraften i naturens stilla dans">
+      <div class="item-img" @click="openPopup('src/assets/images/cropped/fiskmas-1-cropped.jpg')">
+        <img src='../assets/images/cropped/fiskmas-1-cropped.jpg' alt="Kraften i naturens stilla dans">
       </div>
       <div class="item-info">
         <h3>Kraften i naturens stilla dans</h3>
@@ -40,8 +40,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img">
-        <img src='../assets/images/fiskmas-2.jpg' alt="Stormens dans">
+      <div class="item-img" @click="openPopup('src/assets/images/cropped/fiskmas-2-cropped.jpg')">
+        <img src='../assets/images/cropped/fiskmas-2-cropped.jpg' alt="Stormens dans">
       </div>
       <div class="item-info">
         <h3>Stormens dans</h3>
@@ -50,8 +50,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img">
-        <img src='../assets/images/fiskmas-ljus.jpg' alt="Ska vi gå och bada">
+      <div class="item-img" @click="openPopup('src/assets/images/cropped/fiskmas-ljus-cropped.jpg')">
+        <img src='../assets/images/cropped/fiskmas-ljus-cropped.jpg' alt="Ska vi gå och bada">
       </div>
       <div class="item-info">
         <h3>Ska vi gå och bada</h3>
@@ -60,8 +60,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img">
-        <img src='../assets/images/fiskmas-ljus2.jpg' alt="Två hjärtan, Två horisonter">
+      <div class="item-img" @click="openPopup('src/assets/images/cropped/fiskmas-ljus2-cropped.jpg')">
+        <img src='../assets/images/cropped/fiskmas-ljus2-cropped.jpg' alt="Två hjärtan, Två horisonter">
       </div>
       <div class="item-info">
         <h3>Två hjärtan, Två horisonter</h3>
@@ -70,8 +70,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img">
-        <img src='../assets/images/Kom-sa-flyger-vi.jpg' alt="Kom så flyger vi">
+      <div class="item-img"  @click="openPopup('src/assets/images/cropped/Kom-sa-flyger-vi-cropped.jpg')">
+        <img src='../assets/images/cropped/Kom-sa-flyger-vi-cropped.jpg' alt="Kom så flyger vi">
       </div>
       <div class="item-info">
         <h3>Kom så flyger vi</h3>
@@ -80,8 +80,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img">
-        <img src='../assets/images/egentid.jpg' alt="Egentid">
+      <div class="item-img" @click="openPopup('src/assets/images/cropped/egentid-cropped.png')">
+        <img src='../assets/images/cropped/egentid-cropped.png' alt="Egentid">
       </div>
       <div class="item-info">
         <h3>Egentid</h3>
@@ -90,8 +90,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img">
-        <img src='../assets/images/ska-vi-leka.jpg' alt="Ska vi leka">
+      <div class="item-img"  @click="openPopup('src/assets/images/cropped/ska-vi-leka-cropped.jpg')">
+        <img src='../assets/images/cropped/ska-vi-leka-cropped.jpg' alt="Ska vi leka">
       </div>
       <div class="item-info">
         <h3>Ska vi leka</h3>
