@@ -16,7 +16,7 @@
   </article>
   <article class="bottom-row-container">
     <div id="copyright">
-      Copyright @ Anita Blom
+      Copyright 2024 @ Anita Blom
     </div>
     <div class="social-links">
       <a href="https://www.instagram.com/ani_blom" target="_blank" rel="noopener noreferrer">
