@@ -216,7 +216,7 @@ const closePopup = () => {
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    margin-left: 0;
+    margin-left: 1%;
   }
 
 }
