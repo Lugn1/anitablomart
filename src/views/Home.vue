@@ -3,7 +3,11 @@
 </script>
 
 <template>
-  <div class="home-container">
+  <section class="home-container">
+  <div class="intro-container">
+    <section class="text-image">
+      <img src='../assets/images/anitablomart_hager_heron.jpg' alt=" --- ">
+    </section>
     <section class="intro-section">
       <h1>{{$t('Welcome')}}</h1>
       <article>
@@ -19,30 +23,37 @@
       </article>
       <!--      <router-link to="/gallery">Utforska Galleriet</router-link>-->
     </section>
-    <section class="hero-section">
-      <img src='/src/assets/images/egentid.jpg' alt=" --- ">
-    </section>
-
   </div>
+  </section>
 </template>
 
 <style scoped>
+
 .home-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 50%;
+  align-items: center;
+  width: 100%;
+  margin-top: 1%;
+}
+.intro-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 60%;
+  border: 1px solid black;
 }
 
-.hero-section {
+.text-image {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   margin-top: 40px;
   margin-bottom: 5%;
 }
 
-.hero-section img {
+.text-image img {
   max-width: 100%;
   height: auto;
 }
@@ -51,6 +62,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  margin: 2em;
 }
 
 .router-link {
