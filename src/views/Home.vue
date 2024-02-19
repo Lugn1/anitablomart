@@ -4,26 +4,32 @@
 
 <template>
   <section class="home-container">
-  <div class="intro-container">
-    <section class="text-image">
-      <img src='../assets/images/anitablomart_hager_heron.jpg' alt=" --- ">
-    </section>
-    <section class="intro-section">
-      <h1>{{$t('Welcome')}}</h1>
-      <article>
-        {{$t('HomeArticle1')}}
-      </article>
+    <div class="intro-container">
+      <section class="text-image">
+        <a href="/src/assets/images/anitablomart_hager_heron.jpg" target="_blank">
+          <img src='/src/assets/images/anitablomart_hager_heron.jpg' alt="Painting of a heron">
+        </a>
+      </section>
+      <section class="intro-section">
+        <h1>{{ $t('Welcome') }}</h1>
+        <article>
+          {{ $t('HomeArticle1') }}
+        </article>
 
-      <article>
-        {{$t('HomeArticle2')}}
-      </article>
+        <article>
+          {{ $t('HomeArticle2') }}
+        </article>
 
-      <article>
-        {{$t('HomeArticle3')}}
-      </article>
-      <!--      <router-link to="/gallery">Utforska Galleriet</router-link>-->
-    </section>
-  </div>
+        <article>
+          {{ $t('HomeArticle3') }}
+        </article>
+      </section>
+    </div>
+    <div class="image-container">
+      <a href="/src/assets/images/anitablom_hagrar_herons.jpg" target="_blank">
+        <img src="/src/assets/images/anitablom_hagrar_herons.jpg" alt="Painting of herons in water">
+      </a>
+    </div>
   </section>
 </template>
 
@@ -37,12 +43,13 @@
   width: 100%;
   margin-top: 1%;
 }
+
 .intro-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 60%;
-  border: 1px solid black;
+  margin-bottom: 0;
 }
 
 .text-image {
@@ -53,9 +60,14 @@
   margin-bottom: 5%;
 }
 
+a {
+  cursor: default;
+}
+
 .text-image img {
   max-width: 100%;
   height: auto;
+
 }
 
 .intro-section {
@@ -65,11 +77,16 @@
   margin: 2em;
 }
 
-.router-link {
-  display: inline-block;
-  margin-top: 10px;
-  color: blue;
-  text-decoration: none;
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
 }
 
 article {
@@ -80,6 +97,7 @@ article {
   margin-bottom: 2%;
   text-align: left;
 }
+
 @media only screen and (max-width: 767px) {
   .home-container {
     display: flex;
