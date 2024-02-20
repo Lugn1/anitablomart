@@ -61,12 +61,12 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img" @click="openPopup('src/assets/images/cropped/fiskmas-ljus2-cropped.jpg')">
-        <img src='../assets/images/cropped/fiskmas-ljus2-cropped.jpg' alt="Två hjärtan, Två horisonter">
+        <img src='../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg' alt="Två hjärtan, Två horisonter">
       </div>
       <div class="item-info">
         <h3>Två hjärtan, Två horisonter</h3>
-        <p>{{$t('AcrylicPainting')}}</p>
-        <p>{{$t('Price')}}: ---- SEK</p>
+        <p>{{$t('AcrylicPainting')}} 60x60</p>
+        <p>{{$t('Price')}}: 4800 SEK</p>
       </div>
     </div>
     <div class="item-container">
