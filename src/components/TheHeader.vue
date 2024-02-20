@@ -128,6 +128,9 @@ const setLanguage = (language) => {
 
 .flags img {
   cursor: pointer;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 

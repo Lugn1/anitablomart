@@ -19,7 +19,8 @@ const setLanguage = (language) => {
   </span>
       </div>
       <div class="signature-container">
-        <img src="../assets/signature-placeholder.png" alt="Signature">
+<!--        <img src="../assets/signature-placeholder.png" alt="Signature">-->
+        <p id="signature-placeholder">Anita Blom Art</p>
       </div>
       <div class="flags">
         <img
@@ -81,6 +82,12 @@ const setLanguage = (language) => {
   height: 100%;
   margin-right: 2%;
 
+}
+
+#signature-placeholder {
+  font-size: 2em;
+  font-family: "Arsenal", sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .signature-container {
