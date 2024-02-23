@@ -6,8 +6,8 @@
   <section class="home-container">
     <div class="intro-container">
       <section class="text-image">
-        <a href="/src/assets/images/anitablomart_hager_heron.jpg" target="_blank">
-          <img src='/src/assets/images/anitablomart_hager_heron.jpg' alt="Painting of a heron">
+        <a href="/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg" target="_blank">
+          <img src='/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg' alt="Acrylic painting of two herons">
         </a>
       </section>
       <section class="intro-section">
