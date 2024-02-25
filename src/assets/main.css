@@ -10,19 +10,19 @@ html, body {
 h1, h2, h3, h4 {
     font-family: "Arsenal", sans-serif;
     color: #333;
-    font-size: calc(16px + 0.5vw);
+
 }
 
 p {
     color: #333;
     font-family: "Arsenal", sans-serif;
-    font-size: calc(16px + 0.5vw);
+    font-size: calc(12px + 0.5vw);
 }
 
 article {
     color: #333;
     font-family: "Arsenal", sans-serif;
-    font-size: calc(14px + 0.5vw);
+    font-size: calc(12px + 0.5vw);
 }
 
 section {

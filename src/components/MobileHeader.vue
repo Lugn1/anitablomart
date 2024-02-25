@@ -52,8 +52,7 @@ const setLanguage = (language) => {
 }
 
 .line {
-  border-bottom: 4px solid rgba(30, 140, 60, 70%);
-  margin-top: 5%;
+  border-bottom: 8px solid rgba(30, 140, 60, 70%);
 }
 
 .hamburger-menu {

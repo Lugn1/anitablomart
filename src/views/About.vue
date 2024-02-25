@@ -4,13 +4,10 @@
 
 <template>
   <section class="main-container">
-
     <h1>{{ $t('About') }}</h1>
+
     <div class="about">
-      <div class="image-container">
-        <img src='/src/assets/images/utställning.jpg' alt="Picture of me show casing on of my paintings">
-      </div>
-      <div class="firstParagraph">
+      <article>
         <p id="about-first">
           {{ $t('AboutP1') }}
         </p>
@@ -20,14 +17,19 @@
         <p>
           {{ $t('AboutP3') }}
         </p>
+        <div class="image-container">
+          <img src='/src/assets/images/utställning.jpg' alt="Picture of me show casing one of my paintings">
+          <p class="img-text">{{ $t('AboutImageText') }}</p>
+        </div>
 
         <p>{{ $t('AboutP4') }}</p>
 
         <p> {{ $t('AboutP5') }}</p>
+
         <p> {{ $t('AboutP6') }}</p>
 
         <p>{{ $t('AboutP7') }}</p>
-      </div>
+      </article>
 
       <div class="educations">
         <h4>{{ $t('AboutHeader2') }}</h4>
@@ -43,51 +45,66 @@
           <br>
           {{ $t('Course5') }}
         </h4>
-
       </div>
     </div>
+
   </section>
 </template>
 
 <style scoped>
 
-.image-title-container {
-  float: right;
+.img-text {
+  margin: 0;
+  font-size: 0.6em;
+  text-align: center;
+  font-style: italic;
 }
+
 
 .main-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
   width: 80%;
 }
 
+.image-container {
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 70%;
 }
 
 .about img {
   width: auto;
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
-  margin-left: 24px;
-  float: right;
-
 }
 
 p {
-  font-family: 'Arsenal', sans-serif;
+  margin-top: 0;
   line-height: 1.6;
 }
 
 
 .educations {
   display: flex;
-  justify-content: left;
+  width: 100%;
   flex-direction: column;
-  width: 70%;
+  justify-content: left;
+  margin-top: 10%;
 
 }
+
 
 @media only screen and (max-width: 767px) {
   .about {
@@ -100,7 +117,6 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px auto;
     width: auto;
     max-width: 100%;
     height: auto;
@@ -108,19 +124,6 @@ p {
 
   .educations {
     width: 100%;
-  }
-
-  .image-title-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    width: 100%
-  }
-
-  .firstParagraph {
-    display: flex;
-    flex-direction: column-reverse;
   }
 }
 
