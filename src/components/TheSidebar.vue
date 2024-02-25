@@ -51,7 +51,8 @@ export default {
 <style scoped>
 
 .sidebar {
-  background-color: rgb(30, 140, 60);
+  //background-color: rgb(30, 140, 60);
+  background-color: rgba(97, 174, 118);
   float: left;
   position: fixed;
   z-index: 1;

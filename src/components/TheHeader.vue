@@ -117,6 +117,7 @@ const setLanguage = (language) => {
   font-size: 18px;
   font-family: "Arsenal", sans-serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: default;
 }
 
 .flags {

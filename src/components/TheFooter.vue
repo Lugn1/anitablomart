@@ -39,7 +39,7 @@
   width: 100%;
   margin-top: 5%;
   box-sizing: border-box;
-  background-color: rgba(30, 140, 60, 70%);
+  background-color: rgba(40, 150, 60, 70%);
 }
 
 .top-row-container {
@@ -60,6 +60,7 @@
   gap: 3%;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
+  font-size: 12px;
 }
 
 
@@ -70,6 +71,7 @@
   align-items: center;
   margin-top: 5px;
   gap: 25%;
+
 }
 
 .social-links img {
@@ -87,11 +89,13 @@
   margin-top: 12px;
   width: 100%;
   text-decoration: none;
+
 }
 
 .link-items a {
   text-decoration: none;
   color: #333;
+  cursor: default;
 }
 
 @media only screen and (max-width: 800px) {

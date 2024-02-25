@@ -11,7 +11,7 @@
         </a>
       </section>
       <section class="intro-section">
-        <h1>{{ $t('Welcome') }}</h1>
+
         <article>
           {{ $t('HomeArticle1') }}
         </article>
@@ -90,13 +90,13 @@ a {
 }
 
 article {
-  font-size: 20px;
   font-family: 'Arsenal', sans-serif;
   line-height: 1.6;
   font-style: italic;
   margin-bottom: 2%;
   text-align: left;
 }
+
 
 @media only screen and (max-width: 767px) {
   .home-container {
