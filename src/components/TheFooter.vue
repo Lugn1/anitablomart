@@ -33,20 +33,18 @@
 <style scoped>
 .main-container {
   display: flex;
-  background-color: rgb(200, 200, 200);
   justify-content: center;
+  align-content: center;
   align-items: center;
   width: 100%;
-  height: 50px;
   margin-top: 5%;
   box-sizing: border-box;
-
+  background-color: rgba(30, 140, 60, 70%);
 }
 
 .top-row-container {
   display: flex;
   justify-content: center;
-  background-color: rgb(200, 200, 200);
   align-items: center;
   width: 100%;
   height: 100%;
@@ -55,13 +53,13 @@
 .bottom-row-container {
   display: flex;
   justify-content: center;
-  background-color: rgb(200, 200, 200);
+  background-color: transparent;
   align-items: center;
   width: 100%;
-  height: 80%;
-  margin-top: 12px;
-  margin-bottom: 35px;
+  height: 100%;
   gap: 3%;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 

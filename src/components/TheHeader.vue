@@ -98,7 +98,7 @@ const setLanguage = (language) => {
   align-items: center;
   width: 100%;
   left: 0;
-  background-color: rgba(30, 140, 60, 70%);
+  background-color: rgba(40, 150, 60, 70%);
 }
 
 .link-items {
