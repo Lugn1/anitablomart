@@ -16,6 +16,7 @@
 .main-container {
   width: 80%;
   text-align: center;
+  margin-bottom: 50%;
 }
 
 .posts {
@@ -52,6 +53,14 @@ p {
 .date {
   font-size: 14px;
   font-style: italic;
+}
+
+@media only screen and (max-width: 767px) {
+  .main-container {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 100%;
+  }
 }
 
 </style>

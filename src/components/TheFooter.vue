@@ -60,7 +60,7 @@
   gap: 3%;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  font-size: 12px;
+  font-size: calc(6px + 0.5vw);
 }
 
 
@@ -96,6 +96,7 @@
   text-decoration: none;
   color: #333;
   cursor: default;
+  font-size: calc(8px + 0.5vw);
 }
 
 @media only screen and (max-width: 800px) {
@@ -106,6 +107,11 @@
   .link-items {
     gap: 3%;
   }
+  .link-items a {
+    gap: 3%;
+    font-size: calc(12px + 0.5vw);
+  }
+
   .social-links {
     gap: 10px;
   }
@@ -113,6 +119,7 @@
   .bottom-row-container {
     margin-top: 0;
     margin-bottom: 5px;
+    font-size: calc(10px + 0.5vw);
   }
 
   .top-row-container {
