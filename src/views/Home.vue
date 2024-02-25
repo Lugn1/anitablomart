@@ -4,6 +4,9 @@
 
 <template>
   <section class="home-container">
+    <article class="welcome">
+      <h1>{{ $t('Welcome') }}</h1>
+    </article>
     <div class="intro-container">
       <section class="text-image">
         <a href="/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg" target="_blank">
@@ -34,6 +37,14 @@
 </template>
 
 <style scoped>
+
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  height: 5em;
+}
 
 .home-container {
   display: flex;
