@@ -4,13 +4,13 @@
 
 <template>
   <div class="main-container">
-    <section>
+    <section class="title">
       <h1>{{$t('OrderHeading')}} </h1>
       <article class="italic-article">
         {{$t('OrderArticle1')}}
       </article>
     </section>
-    <section>
+    <section class="content">
       <h2>{{$t('OrderHeading2')}} </h2>
       <article>{{$t('OrderArticle2')}}
       </article>
@@ -45,7 +45,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 40%;
+  width: 50%;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 section {
@@ -54,14 +62,13 @@ section {
   flex-direction: column;
 }
 
-
+.content {
+  margin-top: 5%;
+}
 
 article {
   display: flex;
-  text-align: left;
   flex-direction: column;
-  margin-bottom: 2%;
-  font-size: 18px;
   font-family: 'Arsenal', sans-serif;
   line-height: 1.6;
   font-style: normal;
@@ -70,13 +77,13 @@ article {
 .italic-article {
   font-style: italic;
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 850px) {
   .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 80%;
     margin-top: 2%;
   }
 }
