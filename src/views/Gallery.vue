@@ -17,7 +17,15 @@ const closePopup = () => {
 </script>
 
 <template>
-  <div class="main-container">
+  <section class="main-container">
+    <div class="art-rows">
+      <div class="art-group">
+        <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
+        <img src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg" alt="Kom sa flyger vi">
+        <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
+      </div>
+    </div>
+
     <h1>{{$t('Gallery')}}</h1>
     <div class="item-container"  @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')">
       <div class="item-img">
@@ -125,7 +133,7 @@ const closePopup = () => {
     <div v-if="showPopup" class="popup" @click="closePopup">
       <img :src="popupImageSrc" alt="Popup Image" class="popup-img" @click.stop />
     </div>
-  </div>
+  </section>
 
 
 </template>
@@ -137,51 +145,6 @@ const closePopup = () => {
   flex-direction: column;
   align-items: center;
 }
-
-.artworks {
-  background: rgb(180, 185, 185);
-  width: 40%;
-  justify-content: center;
-  align-content: center;
-}
-
-.art-item {
-  justify-content: center;
-  align-content: center;
-  margin-left: 2px;
-  text-align: center;
-
-}
-
-.art-row .art-item {
-  width: 100%;
-  height: 100%;
-  align-content: center;
-  justify-content: center;
-}
-
-
-.art-row .art-item img {
-  max-width: 100%;
-  max-height: 100%;
-  width: 100%;
-  height: 100%;
-
-}
-
-.top-row, .bottom-row {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.top-row .art-item img {
-  justify-content: center;
-  align-content: center;
-  width: 100%;
-  height: auto;
-}
-
 
 .item-container {
   display: flex;
@@ -205,7 +168,6 @@ const closePopup = () => {
   object-fit: contain;
 
 }
-
 
 /* Enlarge img when clicked */
 .popup {
