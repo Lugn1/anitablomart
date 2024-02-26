@@ -193,9 +193,6 @@ const closePopup = () => {
     width: 100%;
 
   }
-  .artworks {
-    width: 100%;
-  }
 
   .item-container {
     flex-direction: row;
