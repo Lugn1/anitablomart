@@ -26,7 +26,7 @@ const closePopup = () => {
       <div class="landscape-items">
         <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
         <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
-    </div>
+      </div>
     </div>
 
     <div class="item-container"
@@ -66,7 +66,8 @@ const closePopup = () => {
     <div class="item-container">
       <div class="item-img"
            @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')">
-        <img src='../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg' alt="Ska vi gå och bada">
+        <img src='../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg'
+             alt="Ska vi gå och bada">
       </div>
       <div class="item-info">
         <h3>Ska vi gå och bada</h3>
@@ -86,7 +87,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')">
+      <div class="item-img"
+           @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')">
         <img src='../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg' alt="Kom så flyger vi">
       </div>
       <div class="item-info">
@@ -143,6 +145,7 @@ const closePopup = () => {
     <div v-if="showPopup" class="popup" @click="closePopup">
       <img :src="popupImageSrc" alt="Popup Image" class="popup-img" @click.stop/>
     </div>
+
   </section>
 
 </template>
@@ -162,6 +165,7 @@ const closePopup = () => {
   margin-top: 1%;
   width: 60%;
   gap: 8px;
+  margin-bottom: 10%;
 }
 
 .grouped-art img {
@@ -170,26 +174,27 @@ const closePopup = () => {
   border: 1px solid rgba(140, 140, 140, 100%);
 }
 
-.portrait-items  {
+.portrait-items {
   width: 40%;
   height: auto;
+
   img {
     width: 100%;
     height: auto;
   }
 }
 
-.landscape-items  {
+.landscape-items {
   width: 30%;
   height: auto;
   gap: 1%;
+
   img {
     width: 100%;
     height: auto;
   }
 
 }
-
 
 
 .item-container {
