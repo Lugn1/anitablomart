@@ -158,11 +158,10 @@ const closePopup = () => {
 .grouped-art {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
-  margin-top: 2%;
+  margin-top: 1%;
   width: 60%;
-  gap: 10px;
+  gap: 8px;
 }
 
 .grouped-art img {
@@ -171,14 +170,24 @@ const closePopup = () => {
   border: 1px solid rgba(140, 140, 140, 100%);
 }
 
-.portrait-items img {
-  width: 100%;
+.portrait-items  {
+  width: 40%;
   height: auto;
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
 
-.landscape-items img {
-  width: 100%;
+.landscape-items  {
+  width: 30%;
   height: auto;
+  gap: 1%;
+  img {
+    width: 100%;
+    height: auto;
+  }
+
 }
 
 
