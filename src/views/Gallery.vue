@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from 'vue';
+import {ref} from 'vue';
 
 const showPopup = ref(false);
 const popupImageSrc = ref('');
@@ -18,33 +18,39 @@ const closePopup = () => {
 
 <template>
   <section class="main-container">
-    <div class="art-rows">
-      <div class="art-group">
-        <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
+    <h1>{{ $t('Gallery') }}</h1>
+    <div class="grouped-art">
+      <div class="portrait-items">
         <img src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg" alt="Kom sa flyger vi">
-        <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
       </div>
+      <div class="landscape-items">
+        <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
+        <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
+    </div>
     </div>
 
-    <h1>{{$t('Gallery')}}</h1>
-    <div class="item-container"  @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')">
+    <div class="item-container"
+         @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')">
       <div class="item-img">
-        <img src='../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg' alt="Skärgårdens serenad">
+        <img src='../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg'
+             alt="Skärgårdens serenad">
       </div>
-      <div class="item-info" >
+      <div class="item-info">
         <h3>Skärgårdens serenad</h3>
-        <p>{{$t('AcrylicPainting')}} 50x50</p>
-        <p>{{$t('Price')}}: 4000 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 50x50</p>
+        <p>{{ $t('Price') }}: 4000 SEK</p>
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg')">
-        <img src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Kraften i naturens stilla dans">
+      <div class="item-img"
+           @click="openPopup('src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg')">
+        <img src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
+             alt="Kraften i naturens stilla dans">
       </div>
       <div class="item-info">
         <h3>Kraften i naturens stilla dans</h3>
-        <p>{{$t('AcrylicPainting')}} 45x55</p>
-        <p>{{$t('Price')}}: 4000 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 45x55</p>
+        <p>{{ $t('Price') }}: 4000 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -53,38 +59,40 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Stormens dans</h3>
-        <p>{{$t('AcrylicPainting')}} 38x45</p>
-        <p>{{$t('Price')}}: 3300 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 38x45</p>
+        <p>{{ $t('Price') }}: 3300 SEK</p>
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')">
+      <div class="item-img"
+           @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')">
         <img src='../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg' alt="Ska vi gå och bada">
       </div>
       <div class="item-info">
         <h3>Ska vi gå och bada</h3>
-        <p>{{$t('AcrylicPainting')}} 60x80</p>
-        <p>{{$t('Price')}}: 5600 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 60x80</p>
+        <p>{{ $t('Price') }}: 5600 SEK</p>
       </div>
     </div>
     <div class="item-container">
       <div class="item-img" @click="openPopup('src/assets/images/cropped/fiskmas-ljus2-cropped.jpg')">
-        <img src='../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg' alt="Två hjärtan, Två horisonter">
+        <img src='../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg'
+             alt="Två hjärtan, Två horisonter">
       </div>
       <div class="item-info">
         <h3>Två hjärtan, Två horisonter</h3>
-        <p>{{$t('AcrylicPainting')}} 60x60</p>
-        <p>{{$t('Price')}}: 4800 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 60x60</p>
+        <p>{{ $t('Price') }}: 4800 SEK</p>
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img"  @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')">
+      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')">
         <img src='../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg' alt="Kom så flyger vi">
       </div>
       <div class="item-info">
         <h3>Kom så flyger vi</h3>
-        <p>{{$t('AcrylicPainting')}} 40x50</p>
-        <p>{{$t('Price')}}: 3600 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 40x50</p>
+        <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
     <div class="item-container">
@@ -93,48 +101,49 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Egentid</h3>
-        <p>{{$t('AcrylicPainting')}} 50x40</p>
-        <p>{{$t('Price')}}: 3600 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 50x40</p>
+        <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img"  @click="openPopup('src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg')">
+      <div class="item-img"
+           @click="openPopup('src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg')">
         <img src='../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg' alt="Ska vi leka">
       </div>
       <div class="item-info">
         <h3>Ska vi leka</h3>
-        <p>{{$t('AcrylicPainting')}} 50x40</p>
-        <p>{{$t('Price')}}: 3600 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 50x40</p>
+        <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
-
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg')">
-        <img src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg' alt="Liten florist acrylic painting">
+      <div class="item-img"
+           @click="openPopup('src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg')">
+        <img src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
+             alt="Liten florist acrylic painting">
       </div>
       <div class="item-info">
         <h3>Liten florist</h3>
-        <p>{{$t('AcrylicPainting')}} 60x50</p>
-        <p>{{$t('Price')}}: 4400 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 60x50</p>
+        <p>{{ $t('Price') }}: 4400 SEK</p>
       </div>
     </div>
-
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg')">
-        <img src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg' alt="Havets ögonblick painting">
+      <div class="item-img"
+           @click="openPopup('src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg')">
+        <img src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
+             alt="Havets ögonblick painting">
       </div>
       <div class="item-info">
         <h3>Havets ögonblick</h3>
-        <p>{{$t('AcrylicPainting')}} 30x40</p>
-        <p>{{$t('Price')}}: 2100 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 30x40</p>
+        <p>{{ $t('Price') }}: 2100 SEK</p>
       </div>
     </div>
-
     <div v-if="showPopup" class="popup" @click="closePopup">
-      <img :src="popupImageSrc" alt="Popup Image" class="popup-img" @click.stop />
+      <img :src="popupImageSrc" alt="Popup Image" class="popup-img" @click.stop/>
     </div>
   </section>
-
 
 </template>
 
@@ -145,6 +154,34 @@ const closePopup = () => {
   flex-direction: column;
   align-items: center;
 }
+
+.grouped-art {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2%;
+  width: 60%;
+  gap: 10px;
+}
+
+.grouped-art img {
+  max-width: 100%;
+  object-fit: contain;
+  border: 1px solid rgba(140, 140, 140, 100%);
+}
+
+.portrait-items img {
+  width: 100%;
+  height: auto;
+}
+
+.landscape-items img {
+  width: 100%;
+  height: auto;
+}
+
+
 
 .item-container {
   display: flex;
@@ -188,6 +225,7 @@ const closePopup = () => {
   max-height: 80%;
 
 }
+
 @media only screen and (max-width: 767px) {
   .main-container {
     width: 100%;
