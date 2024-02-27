@@ -16,20 +16,22 @@ const closePopup = () => {
 };
 
 const blockImages = ref([
-    'src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg',
-    'src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg',
-    'src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg',
-    'src/assets/images/anitablomart_kolibri_bird.jpg',
-    'src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg',
-    'src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg',
-    'src/assets/images/anitablom_hagrar_herons.jpg',
-    'src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg',
-    'src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg',
-    'src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg',
-    'src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg',
-    'src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg',
-    'src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg',
-    'src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg',
+  'src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg',
+  'src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg',
+  'src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg',
+  'src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg',
+  'src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg',
+  'src/assets/images/anitablom_hagrar_herons.jpg',
+  'src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg',
+  'src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg',
+  'src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg',
+  'src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg',
+  'src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg',
+  'src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg',
+  'src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg',
+  'src/assets/images/anitablomart_kolibri_bird.jpg',
+  'src/assets/images/header.jpg',
+
 ]);
 
 </script>
@@ -45,44 +47,50 @@ const blockImages = ref([
       </div>
     </section>
 
+    <section class="gallery-rows">
 
-    <div class="art-row">
-      <div class="portrait-items">
-        <img src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg" alt="Kom sa flyger vi">
+      <div class="art-row">
+        <div class="portrait-items">
+          <img src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg" alt="Kom sa flyger vi">
+        </div>
+        <div class="landscape-items">
+          <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
+          <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
+        </div>
       </div>
-      <div class="landscape-items">
-        <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
-        <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
-      </div>
-    </div>
 
-    <div class="art-row">
-      <div class="portrait-items" >
-        <img src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Följ ditt inre ljus, painting">
-        <img src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg' alt="Ett andetag i tystnad, painting">
-      </div>
-      <div class="landscape-items">
-        <img src="../assets/images/anitablom_hagrar_herons.jpg" alt="Herons, painting">
+      <div class="art-row">
+        <div class="portrait-items">
+          <img src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Följ ditt inre ljus, painting">
+          <img src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
+               alt="Ett andetag i tystnad, painting">
+        </div>
+        <div class="landscape-items">
+          <img src="../assets/images/anitablom_hagrar_herons.jpg" alt="Herons, painting">
 
+        </div>
       </div>
-    </div>
 
-    <div class="art-row">
-      <div class="portrait-items" id="second-row">
-        <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Stormens dans, painting">
-        <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg" alt="Skärgårdens serenad, painting">
-        <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Egentid">
+      <div class="art-row">
+        <div class="portrait-items" id="second-row">
+          <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Stormens dans, painting">
+          <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
+               alt="Skärgårdens serenad, painting">
+          <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
+               alt="Egentid">
+        </div>
       </div>
-    </div>
 
 
-    <div class="art-row">
-      <div class="portrait-items" id="second-row">
-        <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
-        <img src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg" alt="Kom sa flyger vi">
-        <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Egentid">
+      <div class="art-row">
+        <div class="portrait-items" id="second-row">
+          <img src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg" alt="Kom sa flyger vi">
+          <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
+          <img id="kraften" src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg' alt="Egentid">
+        </div>
       </div>
-    </div>
+    </section>
+
 
     <div class="item-container"
          @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')">
@@ -223,13 +231,12 @@ const blockImages = ref([
 }
 
 .gallery-masonry {
-  width: 80%;
-  column-count: 4;
+  width: 60%;
+  column-count: 3;
   column-gap: 1em;
 }
 
 .gallery-item {
-  margin-bottom: 1px;
   break-inside: avoid;
 }
 
@@ -237,6 +244,16 @@ const blockImages = ref([
   width: 100%;
   height: auto;
 
+}
+
+.gallery-rows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2%;
+  width: 100%;
+  margin-bottom: 10%;
+  margin-top: 10%;
 }
 
 
