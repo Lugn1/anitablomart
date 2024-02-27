@@ -19,13 +19,50 @@ const closePopup = () => {
 <template>
   <section class="main-container">
     <h1>{{ $t('Gallery') }}</h1>
-    <div class="grouped-art">
+    <div class="art-row">
       <div class="portrait-items">
         <img src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg" alt="Kom sa flyger vi">
       </div>
       <div class="landscape-items">
         <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
         <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
+      </div>
+    </div>
+
+    <div class="art-row">
+      <div class="portrait-items" >
+        <img src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Egentid">
+        <img src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg' alt="Egentid">
+      </div>
+      <div class="landscape-items">
+        <img src="../assets/images/anitablom_hagrar_herons.jpg" alt="Kom sa flyger vi">
+
+      </div>
+    </div>
+
+    <div class="art-row">
+      <div class="portrait-items" id="second-row">
+        <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Kom sa flyger vi">
+        <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg" alt="Ska vi leka">
+        <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Egentid">
+      </div>
+    </div>
+
+    <div class="art-row">
+      <div class="portrait-items" id="second-row">
+        <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Kom sa flyger vi">
+        <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg" alt="Ska vi leka">
+        <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Egentid">
+      </div>
+    </div>
+
+
+
+    <div class="art-row">
+      <div class="portrait-items" id="second-row">
+        <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
+        <img src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg" alt="Kom sa flyger vi">
+        <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Egentid">
       </div>
     </div>
 
@@ -158,25 +195,34 @@ const closePopup = () => {
   align-items: center;
 }
 
-.grouped-art {
+.art-row {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 1%;
   width: 60%;
   gap: 8px;
-  margin-bottom: 10%;
 }
 
-.grouped-art img {
+
+.art-row img {
   max-width: 100%;
   object-fit: contain;
-  border: 1px solid rgba(140, 140, 140, 100%);
+  ;
+}
+
+#second-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+  width: 70%;
 }
 
 .portrait-items {
   width: 40%;
   height: auto;
+  display: flex;
 
   img {
     width: 100%;
@@ -193,7 +239,6 @@ const closePopup = () => {
     width: 100%;
     height: auto;
   }
-
 }
 
 
