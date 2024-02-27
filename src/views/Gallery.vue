@@ -14,11 +14,38 @@ const openPopup = (src) => {
 const closePopup = () => {
   showPopup.value = false;
 };
+
+const blockImages = ref([
+    'src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg',
+    'src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg',
+    'src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg',
+    'src/assets/images/anitablomart_kolibri_bird.jpg',
+    'src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg',
+    'src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg',
+    'src/assets/images/anitablom_hagrar_herons.jpg',
+    'src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg',
+    'src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg',
+    'src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg',
+    'src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg',
+    'src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg',
+    'src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg',
+    'src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg',
+]);
+
 </script>
 
 <template>
   <section class="main-container">
     <h1>{{ $t('Gallery') }}</h1>
+
+
+    <section class="gallery-masonry">
+      <div v-for="(image, index) in blockImages" :key="index" class="gallery-item">
+        <img :src="image" :alt="'Image ' + index">
+      </div>
+    </section>
+
+
     <div class="art-row">
       <div class="portrait-items">
         <img src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg" alt="Kom sa flyger vi">
@@ -31,31 +58,22 @@ const closePopup = () => {
 
     <div class="art-row">
       <div class="portrait-items" >
-        <img src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Egentid">
-        <img src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg' alt="Egentid">
+        <img src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Följ ditt inre ljus, painting">
+        <img src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg' alt="Ett andetag i tystnad, painting">
       </div>
       <div class="landscape-items">
-        <img src="../assets/images/anitablom_hagrar_herons.jpg" alt="Kom sa flyger vi">
+        <img src="../assets/images/anitablom_hagrar_herons.jpg" alt="Herons, painting">
 
       </div>
     </div>
 
     <div class="art-row">
       <div class="portrait-items" id="second-row">
-        <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Kom sa flyger vi">
-        <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg" alt="Ska vi leka">
+        <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Stormens dans, painting">
+        <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg" alt="Skärgårdens serenad, painting">
         <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Egentid">
       </div>
     </div>
-
-    <div class="art-row">
-      <div class="portrait-items" id="second-row">
-        <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Kom sa flyger vi">
-        <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg" alt="Ska vi leka">
-        <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg' alt="Egentid">
-      </div>
-    </div>
-
 
 
     <div class="art-row">
@@ -204,11 +222,27 @@ const closePopup = () => {
   gap: 8px;
 }
 
+.gallery-masonry {
+  width: 80%;
+  column-count: 4;
+  column-gap: 1em;
+}
+
+.gallery-item {
+  margin-bottom: 1px;
+  break-inside: avoid;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+
+}
+
 
 .art-row img {
   max-width: 100%;
   object-fit: contain;
-  ;
 }
 
 #second-row {
