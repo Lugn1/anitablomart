@@ -13,7 +13,7 @@ const setLanguage = (language) => {
   <div class="main-container" >
     <div class="top-container">
       <div class="signature-container">
-<!--        <img src="../assets/signature-placeholder.png" alt="Signature">-->
+        <img src="../assets/misc/signature.jpg" alt="Signature">
         <p id="signature-placeholder">Anita Blom Art</p>
       </div>
       <div class="social-container">
