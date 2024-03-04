@@ -18,7 +18,7 @@
           {{ $t('AboutP3') }}
         </p>
         <div class="image-container">
-          <img src='/src/assets/images/utställning.jpg' alt="Picture of me show casing one of my paintings">
+          <img src='/src/assets/images/utstallning.jpg' alt="Picture of me show casing one of my paintings">
           <p class="img-text">{{ $t('AboutImageText') }}</p>
         </div>
 

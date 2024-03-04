@@ -4,11 +4,12 @@ import {ref} from 'vue';
 const showPopup = ref(false);
 const popupImageSrc = ref('');
 
-const openPopup = (src) => {
+const openPopup = (src, event) => {
+  event.preventDefault();
   console.log('Opening popup with image source:', src);
   showPopup.value = true;
   popupImageSrc.value = src;
-  console.log(popupImageSrc.value)
+
 };
 
 const closePopup = () => {
@@ -27,19 +28,19 @@ const closePopup = () => {
       <div class="art-row">
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')"
+              @click="openPopup('/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg', $event)"
               src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg"
               alt="Kom sa flyger vi">
         </div>
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg')"
+              @click="openPopup('/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg', $event)"
               src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg'
               alt="Egentid">
         </div>
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg')"
+              @click="openPopup('/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg', $event)"
               src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg"
               alt="Ska vi leka">
         </div>
@@ -48,19 +49,19 @@ const closePopup = () => {
       <div class="art-row">
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg')"
+              @click="openPopup('/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg', $event)"
               src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg'
               alt="Följ ditt inre ljus, painting">
         </div>
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg')"
+              @click="openPopup('/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg', $event)"
               src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
               alt="Ett andetag i tystnad, painting">
         </div>
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablom_hagrar_herons.jpg')"
+              @click="openPopup('/assets/images/anitablom_hagrar_herons.jpg', $event)"
               src="../assets/images/anitablom_hagrar_herons.jpg"
               alt="Herons, painting">
         </div>
@@ -69,19 +70,19 @@ const closePopup = () => {
       <div class="art-row">
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg')"
+              @click="openPopup('/assets/images/anitablomart_stormens_dans_seagull_painting.jpg', $event)"
               src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg"
               alt="Stormens dans, painting">
         </div>
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg')"
+              @click="openPopup('/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg', $event)"
               src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
               alt="Kraften i naturens stilla dans, painting">
         </div>
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')"
+              @click="openPopup('/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg', $event)"
               src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
               alt="Skärgårdens serenad, painting">
         </div>
@@ -90,13 +91,13 @@ const closePopup = () => {
       <div class="art-row">
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')"
+              @click="openPopup('/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg', $event)"
               src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg"
               alt="Ska vi gå och bada">
         </div>
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')"
+              @click="openPopup('/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg', $event)"
               src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg"
               alt="Två hjärtan, två horisonter">
         </div>
@@ -105,7 +106,7 @@ const closePopup = () => {
       <div class="art-row">
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg')"
+              @click="openPopup('/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg', $event)"
               src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
               alt="Havets ögonblick">
         </div>
@@ -113,7 +114,7 @@ const closePopup = () => {
       <div class="art-row">
         <div class="art-row-item">
           <img
-              @click="openPopup('src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg')"
+              @click="openPopup('/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg', $event)"
               src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
               alt="Liten florist">
         </div>
@@ -122,7 +123,7 @@ const closePopup = () => {
 
 
     <div class="item-container"
-         @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')">
+         @click="openPopup('/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg', $event)">
       <div class="item-img">
         <img src='../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg'
              alt="Skärgårdens serenad">
@@ -135,7 +136,7 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img"
-           @click="openPopup('src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg')">
+           @click="openPopup('/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg', $event)">
         <img src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
              alt="Kraften i naturens stilla dans">
       </div>
@@ -146,7 +147,7 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg')">
+      <div class="item-img" @click="openPopup('/assets/images/anitablomart_stormens_dans_seagull_painting.jpg', $event)">
         <img src='../assets/images/anitablomart_stormens_dans_seagull_painting.jpg' alt="Stormens dans">
       </div>
       <div class="item-info">
@@ -157,7 +158,7 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img"
-           @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')">
+           @click="openPopup('/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg', $event)">
         <img src='../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg'
              alt="Ska vi gå och bada">
       </div>
@@ -169,7 +170,7 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img"
-           @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')">
+           @click="openPopup('/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg', $event)">
         <img src='../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg'
              alt="Två hjärtan, Två horisonter">
       </div>
@@ -181,7 +182,7 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img"
-           @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')">
+           @click="openPopup('/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg', $event)">
         <img src='../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg' alt="Kom så flyger vi">
       </div>
       <div class="item-info">
@@ -191,7 +192,7 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg')">
+      <div class="item-img" @click="openPopup('/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg', $event)">
         <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
       </div>
       <div class="item-info">
@@ -202,7 +203,7 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img"
-           @click="openPopup('src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg')">
+           @click="openPopup('/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg', $event)">
         <img src='../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg' alt="Ska vi leka">
       </div>
       <div class="item-info">
@@ -213,7 +214,7 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img"
-           @click="openPopup('src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg')">
+           @click="openPopup('/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg', $event)">
         <img src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
              alt="Liten florist acrylic painting">
       </div>
@@ -225,7 +226,7 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img"
-           @click="openPopup('src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg')">
+           @click="openPopup('/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg', $event)">
         <img src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
              alt="Havets ögonblick painting">
       </div>
