@@ -9,9 +9,8 @@
     </article>
     <div class="intro-container">
       <section class="text-image">
-        <a href="/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg" target="_blank">
-          <img src='/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg' alt="Acrylic painting of two herons">
-        </a>
+        <img src='/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
+             alt="Acrylic painting of two herons">
       </section>
       <section class="intro-section">
 
@@ -29,9 +28,7 @@
       </section>
     </div>
     <div class="image-container">
-      <a href="/src/assets/images/anitablom_hagrar_herons.jpg" target="_blank">
-        <img src="/src/assets/images/anitablom_hagrar_herons.jpg" alt="Painting of herons in water">
-      </a>
+      <img src="/src/assets/images/anitablom_hagrar_herons.jpg" alt="Painting of herons in water">
     </div>
   </section>
 </template>
