@@ -142,8 +142,12 @@ const setLanguage = (language) => {
 
 .signature-container {
   width: 40%;
-  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   object-fit: contain;
+  gap: 10%;
 }
 
 

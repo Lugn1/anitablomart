@@ -55,17 +55,17 @@ const closePopup = () => {
       </div>
       <div class="art-row">
         <div class="portrait-items" id="second-row">
-          <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
           <img src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg" alt="Kom sa flyger vi">
+          <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
         </div>
       </div>
 
-      <div class="art-row">
+      <div class="art-row" id="single-painting">
         <div class="portrait-items" id="second-row">
           <img id="kraften" src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg' alt="Egentid">
         </div>
       </div>
-      <div class="art-row">
+      <div class="art-row" id="single-painting">
         <div class="portrait-items" id="second-row">
           <img id="kraften" src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg' alt="Egentid">
         </div>
@@ -211,7 +211,7 @@ const closePopup = () => {
   flex-direction: row;
   justify-content: center;
   margin-top: 1%;
-  width: 60%;
+  width: 80%;
   gap: 8px;
 }
 
@@ -249,6 +249,7 @@ const closePopup = () => {
   width: 40%;
   height: auto;
   display: flex;
+  gap: 1%;
 
   img {
     width: 100%;
@@ -289,6 +290,10 @@ const closePopup = () => {
   height: auto;
   object-fit: contain;
 
+}
+
+#single-painting {
+  width: 40%;
 }
 
 /* Enlarge img when clicked */
