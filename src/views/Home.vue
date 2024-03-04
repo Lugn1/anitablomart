@@ -103,18 +103,31 @@ a {
 article {
   font-family: 'Arsenal', sans-serif;
   line-height: 1.6;
-  font-style: italic;
+  font-style: normal;
   margin-bottom: 2%;
   text-align: left;
 }
 
 
 @media only screen and (max-width: 767px) {
-  .home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 90%;
+  .intro-container {
+    flex-direction: column; /* Change from row to column */
+    align-items: center; /* Center the items for better alignment */
+    width: 90%; /* Adjust width as necessary */
+  }
+
+  .text-image, .intro-section {
+    width: 100%; /* Make text and image take the full width */
+    margin-top: 20px; /* Add some space on top */
+  }
+
+  .text-image img, .image-container img {
+    width: 100%; /* Adjust image width inside the container */
+    margin: 0 auto; /* Center the image */
+  }
+
+  .home-container, .image-container {
+    width: 100%; /* Adjust the main container width */
   }
 }
 </style>

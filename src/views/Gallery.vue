@@ -26,54 +26,76 @@ const closePopup = () => {
 
       <div class="art-row">
         <div class="portrait-items">
-          <img src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg" alt="Kom sa flyger vi">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')"
+              src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg"
+              alt="Kom sa flyger vi">
         </div>
         <div class="landscape-items">
-          <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
-          <img src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg" alt="Ska vi leka">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg')"
+              src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg'
+              alt="Egentid">
+          <img @click="openPopup('src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg')"
+               src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg"
+               alt="Ska vi leka">
         </div>
       </div>
 
       <div class="art-row">
         <div class="portrait-items">
-          <img src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Följ ditt inre ljus, painting">
-          <img src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
+          <img @click="openPopup('src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg')"
+               src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Följ ditt inre ljus, painting">
+          <img @click="openPopup('src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg')"
+               src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
                alt="Ett andetag i tystnad, painting">
         </div>
         <div class="landscape-items">
-          <img src="../assets/images/anitablom_hagrar_herons.jpg" alt="Herons, painting">
+          <img @click="openPopup('src/assets/images/anitablom_hagrar_herons.jpg')"
+               src="../assets/images/anitablom_hagrar_herons.jpg"
+               alt="Herons, painting">
         </div>
       </div>
       <div class="art-row">
         <div class="portrait-items" id="second-row">
-          <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Stormens dans, painting">
-          <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
-               alt="Egentid">
-          <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
+          <img @click="openPopup('src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg')"
+               src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg"
+               alt="Stormens dans, painting">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg')"
+              src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
+              alt="Egentid">
+          <img @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')"
+               src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
                alt="Skärgårdens serenad, painting">
         </div>
       </div>
       <div class="art-row">
         <div class="portrait-items" id="second-row">
-          <img src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg" alt="Kom sa flyger vi">
-          <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
+          <img @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')"
+               src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg"
+               alt="Kom sa flyger vi">
+          <img @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')"
+               src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg"
+               alt="Ska vi leka">
         </div>
       </div>
 
       <div class="art-row" id="single-painting">
         <div class="portrait-items" id="second-row">
-          <img id="kraften" src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg' alt="Egentid">
+          <img @click="openPopup('src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg')"
+               src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
+               alt="Egentid">
         </div>
       </div>
       <div class="art-row" id="single-painting">
         <div class="portrait-items" id="second-row">
-          <img id="kraften" src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg' alt="Egentid">
+          <img @click="openPopup('src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg')"
+               src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
+               alt="Egentid">
         </div>
       </div>
     </section>
-
-
-
 
 
     <div class="item-container"
@@ -123,7 +145,8 @@ const closePopup = () => {
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')">
+      <div class="item-img"
+           @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')">
         <img src='../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg'
              alt="Två hjärtan, Två horisonter">
       </div>
@@ -293,7 +316,7 @@ const closePopup = () => {
 }
 
 #single-painting {
-  width: 40%;
+  width: 60%;
 }
 
 /* Enlarge img when clicked */
@@ -312,14 +335,13 @@ const closePopup = () => {
 
 }
 
-
 .open-in-new-tab {
   position: absolute;
   bottom: 5%; /* Adjust based on your design */
   left: 50%;
   transform: translateX(-50%);
   color: white; /* Choose color that stands out */
-  background-color: rgba(0,0,0,0.7); /* Optional */
+  background-color: rgba(0, 0, 0, 0.7); /* Optional */
   padding: 5px;
   text-decoration: none;
   border-radius: 5px;
@@ -338,15 +360,19 @@ const closePopup = () => {
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 850px) {
   .main-container {
     width: 100%;
 
   }
 
+  .art-row {
+    width: 100%;
+  }
+
   .item-container {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     margin-left: 1%;
   }

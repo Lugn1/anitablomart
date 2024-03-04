@@ -155,7 +155,6 @@ const setLanguage = (language) => {
 
   .container {
     height: 52%;
-
   }
 
   .links {
