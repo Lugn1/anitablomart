@@ -1,10 +1,10 @@
 <script setup>
-import { reactive, ref } from 'vue';
-import { useI18n } from 'vue-i18n';
+import {reactive, ref} from 'vue';
+import {useI18n} from 'vue-i18n';
 
-const { t } = useI18n();
+const {t} = useI18n();
 
-const WEB3FORMS_ACCESS_KEY = "185ff84d-4f6c-4e2b-822b-fffb390988b4";
+const WEB3FORMS_ACCESS_KEY = "1d90dbfc-214e-4a7f-860f-f603ed390fc4";
 
 const state = reactive({
   name: "",
@@ -55,30 +55,30 @@ async function submitEvent() {
 
 <template>
   <section>
-    <h1>{{$t('Contact')}}</h1>
-    <h4>{{$t('ContactHeader')}}</h4>
+    <h1>{{ $t('Contact') }}</h1>
+    <h4>{{ $t('ContactHeader') }}</h4>
     <form @submit.prevent="submitEvent">
       <div class="form-group">
-        <label for="name">{{$t('NameLabel')}}</label>
+        <label for="name">{{ $t('NameLabel') }}</label>
         <input type="text" id="name" v-model="state.name" required>
       </div>
 
       <div class="form-group">
-        <label for="email">{{$t('EmailLabel')}}</label>
+        <label for="email">{{ $t('EmailLabel') }}</label>
         <input type="email" id="email" v-model="state.email" required>
       </div>
 
       <div class="form-group">
-        <label for="subject">{{$t('SubjectLabel')}}</label>
+        <label for="subject">{{ $t('SubjectLabel') }}</label>
         <input type="text" id="subject" v-model="state.subject" required>
       </div>
 
       <div class="form-group">
-        <label for="message">{{$t('MessageLabel')}}</label>
+        <label for="message">{{ $t('MessageLabel') }}</label>
         <textarea id="message" v-model="state.message" required></textarea>
       </div>
 
-      <button type="submit">{{$t('SubmitLabel')}}</button>
+      <button type="submit">{{ $t('SubmitLabel') }}</button>
     </form>
     <div v-if="showPopup" class="popup">
       {{ popupMessage }}
@@ -98,12 +98,13 @@ async function submitEvent() {
   border: 1px solid #ddd;
   padding: 20px 40px;
   border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   width: 50%;
   text-align: center;
   font-size: 1.2rem;
   z-index: 1000;
 }
+
 .form-group {
   display: flex;
   width: 400px;
