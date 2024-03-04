@@ -54,7 +54,7 @@ async function submitEvent() {
 </script>
 
 <template>
-  <section>
+  <section class="main-container">
     <h1>{{ $t('Contact') }}</h1>
     <h4>{{ $t('ContactHeader') }}</h4>
     <form @submit.prevent="submitEvent">
@@ -88,6 +88,17 @@ async function submitEvent() {
 
 
 <style scoped>
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
 .popup {
   position: fixed;
   top: 50%;
@@ -107,7 +118,7 @@ async function submitEvent() {
 
 .form-group {
   display: flex;
-  width: 400px;
+  width: 100%;
   flex-direction: column;
   margin-bottom: 15px;
 }
@@ -120,7 +131,7 @@ label {
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  width: 400px;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -143,5 +154,14 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+
+@media only screen and (max-width: 850px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+  }
 }
 </style>
