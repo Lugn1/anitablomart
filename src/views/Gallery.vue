@@ -247,8 +247,8 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>{{ $t('Sold')}}</h3>
-        <p>{{ $t('AcrylicPainting') }} 50x70</p>
-        <p>{{ $t('Price') }}: 5000 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 50x50 </p>
+        <p>{{ $t('Price') }}: 4000 SEK</p>
       </div>
     </div>
 
