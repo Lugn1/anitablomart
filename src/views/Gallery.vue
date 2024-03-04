@@ -25,74 +25,97 @@ const closePopup = () => {
     <section class="gallery-rows">
 
       <div class="art-row">
-        <div class="portrait-items">
+        <div class="art-row-item">
           <img
               @click="openPopup('src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg')"
               src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg"
               alt="Kom sa flyger vi">
         </div>
-        <div class="landscape-items">
+        <div class="art-row-item">
           <img
               @click="openPopup('src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg')"
               src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg'
               alt="Egentid">
-          <img @click="openPopup('src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg')"
-               src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg"
-               alt="Ska vi leka">
+        </div>
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg')"
+              src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg"
+              alt="Ska vi leka">
         </div>
       </div>
 
       <div class="art-row">
-        <div class="portrait-items">
-          <img @click="openPopup('src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg')"
-               src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg' alt="Följ ditt inre ljus, painting">
-          <img @click="openPopup('src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg')"
-               src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
-               alt="Ett andetag i tystnad, painting">
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg')"
+              src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg'
+              alt="Följ ditt inre ljus, painting">
         </div>
-        <div class="landscape-items">
-          <img @click="openPopup('src/assets/images/anitablom_hagrar_herons.jpg')"
-               src="../assets/images/anitablom_hagrar_herons.jpg"
-               alt="Herons, painting">
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg')"
+              src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
+              alt="Ett andetag i tystnad, painting">
+        </div>
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablom_hagrar_herons.jpg')"
+              src="../assets/images/anitablom_hagrar_herons.jpg"
+              alt="Herons, painting">
         </div>
       </div>
+
       <div class="art-row">
-        <div class="portrait-items" id="second-row">
-          <img @click="openPopup('src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg')"
-               src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg"
-               alt="Stormens dans, painting">
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg')"
+              src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg"
+              alt="Stormens dans, painting">
+        </div>
+        <div class="art-row-item">
           <img
               @click="openPopup('src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg')"
               src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
-              alt="Egentid">
-          <img @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')"
-               src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
-               alt="Skärgårdens serenad, painting">
+              alt="Kraften i naturens stilla dans, painting">
         </div>
-      </div>
-      <div class="art-row">
-        <div class="portrait-items" id="second-row">
-          <img @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')"
-               src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg"
-               alt="Kom sa flyger vi">
-          <img @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')"
-               src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg"
-               alt="Ska vi leka">
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg')"
+              src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
+              alt="Skärgårdens serenad, painting">
         </div>
       </div>
 
-      <div class="art-row" id="single-painting">
-        <div class="portrait-items" id="second-row">
-          <img @click="openPopup('src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg')"
-               src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
-               alt="Egentid">
+      <div class="art-row">
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg')"
+              src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg"
+              alt="Ska vi gå och bada">
+        </div>
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')"
+              src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg"
+              alt="Två hjärtan, två horisonter">
         </div>
       </div>
-      <div class="art-row" id="single-painting">
-        <div class="portrait-items" id="second-row">
-          <img @click="openPopup('src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg')"
-               src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
-               alt="Egentid">
+
+      <div class="art-row">
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg')"
+              src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
+              alt="Havets ögonblick">
+        </div>
+      </div>
+      <div class="art-row">
+        <div class="art-row-item">
+          <img
+              @click="openPopup('src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg')"
+              src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
+              alt="Liten florist">
         </div>
       </div>
     </section>
@@ -233,17 +256,23 @@ const closePopup = () => {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 1%;
-  width: 80%;
-  gap: 8px;
-}
-
-
-.gallery-item img {
+  margin-top: 2%;
   width: 100%;
-  height: auto;
+  gap: 8px;
 
 }
+
+.art-row-item {
+  max-width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.art-row img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 .gallery-rows {
   display: flex;
@@ -251,46 +280,8 @@ const closePopup = () => {
   align-items: center;
   gap: 2%;
   width: 100%;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
 }
-
-
-.art-row img {
-  max-width: 100%;
-  object-fit: contain;
-}
-
-#second-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 8px;
-  width: 70%;
-}
-
-.portrait-items {
-  width: 40%;
-  height: auto;
-  display: flex;
-  gap: 1%;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
-.landscape-items {
-  width: 30%;
-  height: auto;
-  gap: 1%;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
-}
-
 
 .item-container {
   display: flex;
@@ -315,9 +306,6 @@ const closePopup = () => {
 
 }
 
-#single-painting {
-  width: 60%;
-}
 
 /* Enlarge img when clicked */
 .popup {
@@ -367,13 +355,27 @@ const closePopup = () => {
   }
 
   .art-row {
-    width: 100%;
+    width: 95%;
   }
+
+  .art-row-item {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .art-row img {
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+
 
   .item-container {
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    width: 95%;
+    margin-top: 10%;
     margin-left: 1%;
   }
 
