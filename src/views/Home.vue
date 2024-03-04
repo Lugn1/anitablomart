@@ -8,10 +8,7 @@
       <h1>{{ $t('Welcome') }}</h1>
     </article>
     <div class="intro-container">
-      <section class="text-image">
-        <img src='/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
-             alt="Acrylic painting of two herons">
-      </section>
+
       <section class="intro-section">
 
         <article>
@@ -25,6 +22,10 @@
         <article>
           {{ $t('HomeArticle3') }}
         </article>
+      </section>
+      <section class="text-image">
+        <img src='/src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
+             alt="Acrylic painting of two herons">
       </section>
     </div>
     <div class="image-container">
