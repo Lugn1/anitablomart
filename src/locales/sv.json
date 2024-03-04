@@ -46,5 +46,6 @@
   "SubmitLabel": "Skicka",
   "SendSuccess": "Meddelandet har skickats.",
   "SendError1": "Det gick inte att skicka meddelandet. Försök igen senare.",
-  "SendError2": "Ett fel inträffade. Kontrollera din internetanslutning."
+  "SendError2": "Ett fel inträffade. Kontrollera din internetanslutning.",
+  "Sold": "SÅLD"
 }

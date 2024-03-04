@@ -1,189 +1,117 @@
 <script setup>
 import {ref} from 'vue';
 
+// Importing images
+import komSaFlygerViImg from '../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg';
+import egentidImg from '../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg';
+import skaViLekaImg from '../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg';
+import foljDittInreLjusImg from '../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg';
+import ettAndetagITystnadImg from '../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg';
+import havetsOgonblickImg from '../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg';
+import litenFloristImg from '../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg';
+import skaViGaOchBadaImg from '../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg';
+import tvaHjartanTvaHorisonterImg from '../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg';
+import stormensDansImg from '../assets/images/anitablomart_stormens_dans_seagull_painting.jpg';
+import kraftenINaturensStillaDansImg from '../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg';
+import skargardensSerenadImg from '../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg';
+import fridensSkimmerImg from '../assets/images/anitablom_fridens_skimmer_herons.jpg';
+import kolibriImg from '../assets/images/anitablomart_kolibri_hummingbird.jpg';
+
 const showPopup = ref(false);
 const popupImageSrc = ref('');
 
 const openPopup = (src, event) => {
   event.preventDefault();
-  console.log('Opening popup with image source:', src);
   showPopup.value = true;
   popupImageSrc.value = src;
-
 };
 
 const closePopup = () => {
   showPopup.value = false;
 };
-
-
 </script>
+
 
 <template>
   <section class="main-container">
     <h1>{{ $t('Gallery') }}</h1>
-
     <section class="gallery-rows">
 
       <div class="art-row">
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg', $event)"
-              src="../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg"
-              alt="Kom sa flyger vi">
+          <img @click="openPopup(komSaFlygerViImg, $event)" :src="komSaFlygerViImg"
+               alt='"Kom så flyger vi" acrylic painting depicting blue tit bird flying by Anita Blom'>
         </div>
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg', $event)"
-              src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg'
-              alt="Egentid">
+          <img @click="openPopup(egentidImg, $event)" :src="egentidImg"
+               alt='"Egentid" acrylic painting showcasing a blue tit tranquil moment in nature by Anita Blom'>
         </div>
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg', $event)"
-              src="../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg"
-              alt="Ska vi leka">
+          <img @click="openPopup(skaViLekaImg, $event)" :src="skaViLekaImg"
+               alt='"Ska vi leka" acrylic painting of playful blue tit birds in a forest by Anita Blom'>
         </div>
       </div>
 
       <div class="art-row">
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg', $event)"
-              src='../assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg'
-              alt="Följ ditt inre ljus, painting">
+          <img @click="openPopup(foljDittInreLjusImg, $event)" :src="foljDittInreLjusImg"
+               alt='"Följ ditt inre ljus" acrylic painting illustrating a heron looking towards a light by Anita Blom'>
         </div>
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg', $event)"
-              src='../assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg'
-              alt="Ett andetag i tystnad, painting">
+          <img @click="openPopup(ettAndetagITystnadImg, $event)" :src="ettAndetagITystnadImg"
+               alt='"Ett andetag i tystnad" acrylic painting capturing a moment of silence and reflection by Anita Blom'>
         </div>
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablom_hagrar_herons.jpg', $event)"
-              src="../assets/images/anitablom_hagrar_herons.jpg"
-              alt="Herons, painting">
+          <img @click="openPopup(fridensSkimmerImg, $event)" :src="fridensSkimmerImg"
+               alt='"Fridens Skimmer" acrylic painting capturing a peaceful moment of herons by Anita Blom'>
         </div>
       </div>
 
       <div class="art-row">
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_stormens_dans_seagull_painting.jpg', $event)"
-              src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg"
-              alt="Stormens dans, painting">
+          <img @click="openPopup(stormensDansImg, $event)" :src="stormensDansImg"
+               alt='"Stormens dans" acrylic painting capturing the dynamic energy of a storm by Anita Blom'>
         </div>
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg', $event)"
-              src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
-              alt="Kraften i naturens stilla dans, painting">
+          <img @click="openPopup(kraftenINaturensStillaDansImg, $event)" :src="kraftenINaturensStillaDansImg"
+               alt='"Kraften i naturens stilla dans" acrylic painting illustrating the peaceful movement in nature by Anita Blom'>
         </div>
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg', $event)"
-              src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
-              alt="Skärgårdens serenad, painting">
+          <img @click="openPopup(skargardensSerenadImg, $event)" :src="skargardensSerenadImg"
+               alt='"Skärgårdens serenad" acrylic painting of a serene archipelago landscape by Anita Blom'>
         </div>
       </div>
 
       <div class="art-row">
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg', $event)"
-              src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg"
-              alt="Ska vi gå och bada">
+          <img @click="openPopup(skaViGaOchBadaImg, $event)" :src="skaViGaOchBadaImg"
+               alt='"Ska vi gå och bada" acrylic painting of seagulls at the beach by Anita Blom'>
         </div>
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg', $event)"
-              src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg"
-              alt="Två hjärtan, två horisonter">
+          <img @click="openPopup(tvaHjartanTvaHorisonterImg, $event)" :src="tvaHjartanTvaHorisonterImg"
+               alt='"Två hjärtan, två horisonter" acrylic painting representing love and distant horizons by Anita Blom'>
         </div>
       </div>
 
       <div class="art-row">
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg', $event)"
-              src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
-              alt="Havets ögonblick">
+          <img @click="openPopup(havetsOgonblickImg, $event)" :src="havetsOgonblickImg"
+               alt='"Havets ögonblick" acrylic painting of a seal swimming in the ocean by Anita Blom'>
         </div>
       </div>
+
       <div class="art-row">
         <div class="art-row-item">
-          <img
-              @click="openPopup('/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg', $event)"
-              src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
-              alt="Liten florist">
+          <img @click="openPopup(litenFloristImg, $event)" :src="litenFloristImg"
+               alt='"Liten florist" acrylic painting depicting a young hare arranging flowers by Anita Blom'>
         </div>
       </div>
     </section>
 
 
-    <div class="item-container"
-         @click="openPopup('/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg', $event)">
+    <div class="item-container" @click="openPopup(komSaFlygerViImg, $event)">
       <div class="item-img">
-        <img src='../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg'
-             alt="Skärgårdens serenad">
-      </div>
-      <div class="item-info">
-        <h3>Skärgårdens serenad</h3>
-        <p>{{ $t('AcrylicPainting') }} 50x50</p>
-        <p>{{ $t('Price') }}: 4000 SEK</p>
-      </div>
-    </div>
-    <div class="item-container">
-      <div class="item-img"
-           @click="openPopup('/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg', $event)">
-        <img src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
-             alt="Kraften i naturens stilla dans">
-      </div>
-      <div class="item-info">
-        <h3>Kraften i naturens stilla dans</h3>
-        <p>{{ $t('AcrylicPainting') }} 45x55</p>
-        <p>{{ $t('Price') }}: 4000 SEK</p>
-      </div>
-    </div>
-    <div class="item-container">
-      <div class="item-img" @click="openPopup('/assets/images/anitablomart_stormens_dans_seagull_painting.jpg', $event)">
-        <img src='../assets/images/anitablomart_stormens_dans_seagull_painting.jpg' alt="Stormens dans">
-      </div>
-      <div class="item-info">
-        <h3>Stormens dans</h3>
-        <p>{{ $t('AcrylicPainting') }} 38x45</p>
-        <p>{{ $t('Price') }}: 3300 SEK</p>
-      </div>
-    </div>
-    <div class="item-container">
-      <div class="item-img"
-           @click="openPopup('/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg', $event)">
-        <img src='../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg'
-             alt="Ska vi gå och bada">
-      </div>
-      <div class="item-info">
-        <h3>Ska vi gå och bada</h3>
-        <p>{{ $t('AcrylicPainting') }} 60x80</p>
-        <p>{{ $t('Price') }}: 5600 SEK</p>
-      </div>
-    </div>
-    <div class="item-container">
-      <div class="item-img"
-           @click="openPopup('/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg', $event)">
-        <img src='../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg'
-             alt="Två hjärtan, Två horisonter">
-      </div>
-      <div class="item-info">
-        <h3>Två hjärtan, Två horisonter</h3>
-        <p>{{ $t('AcrylicPainting') }} 60x60</p>
-        <p>{{ $t('Price') }}: 4800 SEK</p>
-      </div>
-    </div>
-    <div class="item-container">
-      <div class="item-img"
-           @click="openPopup('/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg', $event)">
-        <img src='../assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg' alt="Kom så flyger vi">
+        <img :src="komSaFlygerViImg" alt='"Kom så flyger vi" acrylic painting depicting blue tit bird flying by Anita Blom'>
       </div>
       <div class="item-info">
         <h3>Kom så flyger vi</h3>
@@ -191,9 +119,10 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
-    <div class="item-container">
-      <div class="item-img" @click="openPopup('/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg', $event)">
-        <img src='../assets/images/anitablomart_egentid_acrylic_painting_bird.jpg' alt="Egentid">
+    <div class="item-container" @click="openPopup(egentidImg, $event)">
+      <div class="item-img">
+        <img :src="egentidImg"
+             alt='"Egentid" acrylic painting showcasing a tranquil moment in nature by Anita Blom'>
       </div>
       <div class="item-info">
         <h3>Egentid</h3>
@@ -201,10 +130,10 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
-    <div class="item-container">
-      <div class="item-img"
-           @click="openPopup('/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg', $event)">
-        <img src='../assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg' alt="Ska vi leka">
+    <div class="item-container" @click="openPopup(skaViLekaImg, $event)">
+      <div class="item-img">
+        <img :src="skaViLekaImg"
+             alt='"Ska vi leka" acrylic painting of playful animals in a forest by Anita Blom'>
       </div>
       <div class="item-info">
         <h3>Ska vi leka</h3>
@@ -212,23 +141,32 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
-    <div class="item-container">
-      <div class="item-img"
-           @click="openPopup('/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg', $event)">
-        <img src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg'
-             alt="Liten florist acrylic painting">
+    <div class="item-container" @click="openPopup(foljDittInreLjusImg, $event)">
+      <div class="item-img">
+        <img :src="foljDittInreLjusImg"
+             alt='"Följ ditt inre ljus" acrylic painting illustrating a person walking towards the light by Anita Blom'>
       </div>
       <div class="item-info">
-        <h3>Liten florist</h3>
-        <p>{{ $t('AcrylicPainting') }} 60x50</p>
-        <p>{{ $t('Price') }}: 4400 SEK</p>
+        <h3>Följ ditt inre ljus</h3>
+        <p>{{ $t('AcrylicPainting') }} 45x55</p>
+        <p>{{ $t('Price') }}: 4000 SEK</p>
       </div>
     </div>
-    <div class="item-container">
-      <div class="item-img"
-           @click="openPopup('/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg', $event)">
-        <img src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg'
-             alt="Havets ögonblick painting">
+    <div class="item-container" @click="openPopup(ettAndetagITystnadImg, $event)">
+      <div class="item-img">
+        <img :src="ettAndetagITystnadImg"
+             alt='"Ett andetag i tystnad" acrylic painting capturing a moment of silence and reflection by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>Ett andetag i tystnad</h3>
+        <p>{{ $t('AcrylicPainting') }} 55x65</p>
+        <p>{{ $t('Price') }}: 4500 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(havetsOgonblickImg, $event)">
+      <div class="item-img">
+        <img :src="havetsOgonblickImg"
+             alt='"Havets ögonblick" acrylic painting of a seal swimming in the ocean by Anita Blom'>
       </div>
       <div class="item-info">
         <h3>Havets ögonblick</h3>
@@ -236,6 +174,85 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 2100 SEK</p>
       </div>
     </div>
+    <div class="item-container" @click="openPopup(litenFloristImg, $event)">
+      <div class="item-img">
+        <img :src="litenFloristImg"
+             alt='"Liten florist" acrylic painting depicting a young hare arranging flowers by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>Liten florist</h3>
+        <p>{{ $t('AcrylicPainting') }} 60x50</p>
+        <p>{{ $t('Price') }}: 4400 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(skaViGaOchBadaImg, $event)">
+      <div class="item-img">
+        <img :src="skaViGaOchBadaImg"
+             alt='"Ska vi gå och bada" acrylic painting of seagulls at the beach by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>Ska vi gå och bada</h3>
+        <p>{{ $t('AcrylicPainting') }} 60x80</p>
+        <p>{{ $t('Price') }}: 5600 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(tvaHjartanTvaHorisonterImg, $event)">
+      <div class="item-img">
+        <img :src="tvaHjartanTvaHorisonterImg"
+             alt='"Två hjärtan, två horisonter" acrylic painting representing love and distant horizons by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>Två hjärtan, två horisonter</h3>
+        <p>{{ $t('AcrylicPainting') }} 60x60</p>
+        <p>{{ $t('Price') }}: 4800 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(stormensDansImg, $event)">
+      <div class="item-img">
+        <img :src="stormensDansImg"
+             alt='"Stormens dans" acrylic painting capturing the dynamic energy of a storm by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>Stormens dans</h3>
+        <p>{{ $t('AcrylicPainting') }} 38x45</p>
+        <p>{{ $t('Price') }}: 3300 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(kraftenINaturensStillaDansImg, $event)">
+      <div class="item-img">
+        <img :src="kraftenINaturensStillaDansImg"
+             alt='"Kraften i naturens stilla dans" acrylic painting illustrating the peaceful movement in nature by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>Kraften i naturens stilla dans</h3>
+        <p>{{ $t('AcrylicPainting') }} 45x55</p>
+        <p>{{ $t('Price') }}: 4000 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(skargardensSerenadImg, $event)">
+      <div class="item-img">
+        <img :src="skargardensSerenadImg"
+             alt='"Skärgårdens serenad" acrylic painting of a serene archipelago landscape by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>Skärgårdens serenad</h3>
+        <p>{{ $t('AcrylicPainting') }} 50x70</p>
+        <p>{{ $t('Price') }}: 5000 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(kolibriImg, $event)">
+      <div class="item-img">
+        <img :src="kolibriImg"
+             alt='"Kolibri" acrylic painting of a hummingbird by Anita Blom'>
+      </div>
+      <div class="item-info">
+        <h3>{{ $t('Sold')}}</h3>
+        <p>{{ $t('AcrylicPainting') }} 50x70</p>
+        <p>{{ $t('Price') }}: 5000 SEK</p>
+      </div>
+    </div>
+
+
     <div v-if="showPopup" class="popup" @click="closePopup">
       <img :src="popupImageSrc" alt="Popup Image" class="popup-img" @click.stop/>
       <a :href="popupImageSrc" target="_blank" class="open-in-new-tab">{{ $t('OpenInNewTab') }}</a>
@@ -369,7 +386,6 @@ const closePopup = () => {
     max-width: 100%;
     object-fit: contain;
   }
-
 
 
   .item-container {

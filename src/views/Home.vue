@@ -29,7 +29,7 @@
       </section>
     </div>
     <div class="image-container">
-      <img src="/src/assets/images/anitablom_hagrar_herons.jpg" alt="Painting of herons in water">
+      <img src="/src/assets/images/anitablom_fridens_skimmer_herons.jpg" alt="Painting of herons in water">
     </div>
   </section>
 </template>

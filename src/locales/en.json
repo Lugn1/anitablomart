@@ -54,5 +54,8 @@
   "SubmitLabel": "Send",
   "SendSuccess": "The message has been sent successfully.",
   "SendError1": "The message could not be sent. Try again later.",
-  "SendError2": "An error occurred. Please check your internet connection."
+  "SendError2": "An error occurred. Please check your internet connection.",
+
+  "Sold": "SOLD"
+
 }
