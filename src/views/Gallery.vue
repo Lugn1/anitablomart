@@ -15,37 +15,12 @@ const closePopup = () => {
   showPopup.value = false;
 };
 
-const blockImages = ref([
-  'src/assets/images/anitablomart_ska_vi_leka_acrylic_blames_painting.jpg',
-  'src/assets/images/anitablomart_kom_sa_flyger_vi_lets_fly_acrylic.jpg',
-  'src/assets/images/anitablomart_egentid_acrylic_painting_bird.jpg',
-  'src/assets/images/anitablomart_folj_ditt_inre_ljus_hager.jpg',
-  'src/assets/images/anitablomart_ett_andetag_i_tystnad_painting.jpg',
-  'src/assets/images/anitablom_hagrar_herons.jpg',
-  'src/assets/images/anitablomart_stormens_dans_seagull_painting.jpg',
-  'src/assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg',
-  'src/assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg',
-  'src/assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg',
-  'src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg',
-  'src/assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg',
-  'src/assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg',
-  'src/assets/images/anitablomart_kolibri_bird.jpg',
-  'src/assets/images/header.jpg',
-
-]);
 
 </script>
 
 <template>
   <section class="main-container">
     <h1>{{ $t('Gallery') }}</h1>
-
-
-    <section class="gallery-masonry">
-      <div v-for="(image, index) in blockImages" :key="index" class="gallery-item">
-        <img :src="image" :alt="'Image ' + index">
-      </div>
-    </section>
 
     <section class="gallery-rows">
 
@@ -67,29 +42,38 @@ const blockImages = ref([
         </div>
         <div class="landscape-items">
           <img src="../assets/images/anitablom_hagrar_herons.jpg" alt="Herons, painting">
-
         </div>
       </div>
-
       <div class="art-row">
         <div class="portrait-items" id="second-row">
           <img src="../assets/images/anitablomart_stormens_dans_seagull_painting.jpg" alt="Stormens dans, painting">
-          <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
-               alt="Skärgårdens serenad, painting">
           <img id="kraften" src='../assets/images/anitablomart_kraften_i_naturens_stilla_dans_acrylic.jpg'
                alt="Egentid">
+          <img src="../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg"
+               alt="Skärgårdens serenad, painting">
         </div>
       </div>
-
+      <div class="art-row">
+        <div class="portrait-items" id="second-row">
+          <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
+          <img src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg" alt="Kom sa flyger vi">
+        </div>
+      </div>
 
       <div class="art-row">
         <div class="portrait-items" id="second-row">
-          <img src="../assets/images/anitablomart_ska_vi_ga_och_bada_acrylic_seagull_beach.jpg" alt="Kom sa flyger vi">
-          <img src="../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg" alt="Ska vi leka">
           <img id="kraften" src='../assets/images/anitablomart_havets_ogonblick_acrylic_seal_ocean.jpg' alt="Egentid">
         </div>
       </div>
+      <div class="art-row">
+        <div class="portrait-items" id="second-row">
+          <img id="kraften" src='../assets/images/anitablomart_liten_florist_acrylic_hare_painting.jpg' alt="Egentid">
+        </div>
+      </div>
     </section>
+
+
+
 
 
     <div class="item-container"
@@ -139,7 +123,7 @@ const blockImages = ref([
       </div>
     </div>
     <div class="item-container">
-      <div class="item-img" @click="openPopup('src/assets/images/cropped/fiskmas-ljus2-cropped.jpg')">
+      <div class="item-img" @click="openPopup('src/assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg')">
         <img src='../assets/images/anitablomart_tva-hjartan_tva-horisonter_seagulls_painting.jpg'
              alt="Två hjärtan, Två horisonter">
       </div>
@@ -207,6 +191,7 @@ const blockImages = ref([
     </div>
     <div v-if="showPopup" class="popup" @click="closePopup">
       <img :src="popupImageSrc" alt="Popup Image" class="popup-img" @click.stop/>
+      <a :href="popupImageSrc" target="_blank" class="open-in-new-tab">{{ $t('OpenInNewTab') }}</a>
     </div>
 
   </section>
@@ -230,15 +215,6 @@ const blockImages = ref([
   gap: 8px;
 }
 
-.gallery-masonry {
-  width: 60%;
-  column-count: 3;
-  column-gap: 1em;
-}
-
-.gallery-item {
-  break-inside: avoid;
-}
 
 .gallery-item img {
   width: 100%;
@@ -253,7 +229,6 @@ const blockImages = ref([
   gap: 2%;
   width: 100%;
   margin-bottom: 10%;
-  margin-top: 10%;
 }
 
 
@@ -327,7 +302,29 @@ const blockImages = ref([
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   z-index: 10; /* Make sure it's above everything else */
+
+}
+
+
+.open-in-new-tab {
+  position: absolute;
+  bottom: 5%; /* Adjust based on your design */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Choose color that stands out */
+  background-color: rgba(0,0,0,0.7); /* Optional */
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 20px; /* Adjust based on your design */
+}
+
+/* Ensure the text is legible and stands out */
+.open-in-new-tab:hover {
+  color: #ccc; /* Lighter shade for hover effect */
+  text-decoration: underline;
 }
 
 .popup-img {
