@@ -122,14 +122,14 @@ const setLanguage = (language) => {
 
 .flags {
   display: flex;
-  width: 6%;
+  width: 80px;
   gap: 15%;
 
 }
 
 .flags img {
   cursor: pointer;
-  width: 100%;
+  width: 40%;
   height: auto;
   object-fit: contain;
 }
