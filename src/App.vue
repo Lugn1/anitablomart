@@ -3,6 +3,7 @@ import TheHeader from "./components/TheHeader.vue";
 import Sidebar from "@/components/TheSidebar.vue";
 import MobileHeader from "@/components/MobileHeader.vue";
 import TheFooter from "@/components/TheFooter.vue";
+import BackToTop from "@/components/BackToTop.vue";
 </script>
 
 <template>
@@ -24,6 +25,7 @@ import TheFooter from "@/components/TheFooter.vue";
     <section class="footer">
     <TheFooter></TheFooter>
     </section>
+    <BackToTop></BackToTop>
   </section>
 </template>
 
