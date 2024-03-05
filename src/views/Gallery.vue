@@ -144,12 +144,12 @@ const closePopup = () => {
     <div class="item-container" @click="openPopup(foljDittInreLjusImg, $event)">
       <div class="item-img">
         <img :src="foljDittInreLjusImg"
-             alt='"Följ ditt inre ljus" acrylic painting illustrating a person walking towards the light by Anita Blom'>
+             alt='"Följ ditt inre ljus" acrylic painting illustrating a heron looking towards its inner light by Anita Blom'>
       </div>
       <div class="item-info">
         <h3>Följ ditt inre ljus</h3>
-        <p>{{ $t('AcrylicPainting') }} 45x55</p>
-        <p>{{ $t('Price') }}: 4000 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 40x50</p>
+        <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
     <div class="item-container" @click="openPopup(ettAndetagITystnadImg, $event)">
@@ -159,8 +159,19 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>Ett andetag i tystnad</h3>
-        <p>{{ $t('AcrylicPainting') }} 55x65</p>
-        <p>{{ $t('Price') }}: 4500 SEK</p>
+        <p>{{ $t('AcrylicPainting') }} 40x50</p>
+        <p>{{ $t('Price') }}: 3600 SEK</p>
+      </div>
+    </div>
+    <div class="item-container" @click="openPopup(fridensSkimmerImg, $event)">
+      <div class="item-img">
+        <img :src="fridensSkimmerImg"
+             alt='"Fridens Skimmer" by Anita Blom, featuring four herons in a watery abstract landscape'>
+      </div>
+      <div class="item-info">
+        <h3>Fridens skimmer</h3>
+        <p>{{ $t('AcrylicPainting') }} 50x40</p>
+        <p>{{ $t('Price') }}: 3600 SEK</p>
       </div>
     </div>
     <div class="item-container" @click="openPopup(havetsOgonblickImg, $event)">
@@ -247,8 +258,6 @@ const closePopup = () => {
       </div>
       <div class="item-info">
         <h3>{{ $t('Sold')}}</h3>
-        <p>{{ $t('AcrylicPainting') }} 50x50 </p>
-        <p>{{ $t('Price') }}: 4000 SEK</p>
       </div>
     </div>
 
