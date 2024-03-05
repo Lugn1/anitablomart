@@ -1,7 +1,8 @@
 <template>
   <div v-if="visible" class="back-to-top" @click="scrollTop">
     <!-- You can use an arrow icon or just a simple text -->
-    ↑
+
+    <p>{{ $t('BackToTop') }}</p>
   </div>
 </template>
 
@@ -17,7 +18,7 @@ export default {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     },
     handleScroll() {
-      this.visible = window.scrollY > 500; // Change 500 to the number of pixels you want
+      this.visible = window.scrollY > 5000; // Change 500 to the number of pixels you want
     },
   },
   mounted() {
@@ -32,10 +33,19 @@ export default {
 <style scoped>
 .back-to-top {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 10%;
+  right: 10%;
   cursor: pointer;
+  z-index: 1000;
+  background-color: rgb(40, 150, 60);
+  color: white;
+  padding: 10px;
+  border-radius: 500px;
+}
 
+p {
+  color: white;
+  font-size: 14px;
 }
 
 </style>
