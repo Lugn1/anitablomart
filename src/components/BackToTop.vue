@@ -39,13 +39,14 @@ export default {
   z-index: 1000;
   background-color: rgb(40, 150, 60);
   color: white;
-  padding: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
   border-radius: 500px;
 }
 
 p {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 </style>
