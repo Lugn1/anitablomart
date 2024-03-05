@@ -44,6 +44,8 @@
           {{ $t('Course4') }}
           <br>
           {{ $t('Course5') }}
+          <br>
+          {{ $t('Course6') }}
         </h4>
       </div>
     </div>
@@ -102,7 +104,6 @@ p {
   width: 100%;
   flex-direction: column;
   justify-content: left;
-  margin-top: 10%;
 
 }
 
