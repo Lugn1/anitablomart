@@ -7,7 +7,7 @@
       <a href="https://www.instagram.com/ani_blom" target="_blank" rel="noopener noreferrer">
         <img src="../assets/icons/Instagram_Glyph_Gradient.png" alt="Instagram icon">
       </a>
-    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/anita.blom.98622" target="_blank" rel="noopener noreferrer">
       <img src="../assets/icons/Facebook_Logo_Primary.png" alt="Facebook icon">
     </a>
   </div>
