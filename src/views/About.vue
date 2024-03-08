@@ -32,9 +32,8 @@
       </article>
 
       <div class="educations">
-        <h4>{{ $t('AboutHeader2') }}</h4>
-
-        <h4>
+        <h3 id="title">{{ $t('AboutHeader2') }}</h3>
+        <h4 id="courses">
           {{ $t('Course1') }}
           <br>
           {{ $t('Course2') }}
@@ -76,6 +75,13 @@
   width: 100%;
   margin-top: 5%;
   margin-bottom: 5%;
+}
+
+#title {
+  margin-bottom: 0;
+}
+#courses {
+  margin-top: 15px;
 }
 
 .about {
