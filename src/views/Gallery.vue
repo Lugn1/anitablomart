@@ -200,7 +200,7 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 2100 SEK</p>
       </div>
     </div>
-    <div class="item-container" >
+    <div class="item-container">
       <div class="item-img">
         <img :src="litenFloristImg"
              @click="openPopup(litenFloristImg, $event)"
@@ -212,7 +212,7 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 4400 SEK</p>
       </div>
     </div>
-    <div class="item-container" >
+    <div class="item-container">
       <div class="item-img">
         <img :src="skaViGaOchBadaImg"
              @click="openPopup(skaViGaOchBadaImg, $event)"
@@ -224,7 +224,7 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 5600 SEK</p>
       </div>
     </div>
-    <div class="item-container" >
+    <div class="item-container">
       <div class="item-img">
         <img :src="tvaHjartanTvaHorisonterImg"
              @click="openPopup(tvaHjartanTvaHorisonterImg, $event)"
@@ -236,7 +236,7 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 4800 SEK</p>
       </div>
     </div>
-    <div class="item-container" >
+    <div class="item-container">
       <div class="item-img">
         <img :src="stormensDansImg"
              @click="openPopup(stormensDansImg, $event)"
@@ -248,7 +248,7 @@ const closePopup = () => {
         <p>{{ $t('Price') }}: 3300 SEK</p>
       </div>
     </div>
-    <div class="item-container" >
+    <div class="item-container">
       <div class="item-img">
         <img :src="kraftenINaturensStillaDansImg"
              @click="openPopup(kraftenINaturensStillaDansImg, $event)"
@@ -274,14 +274,27 @@ const closePopup = () => {
     </div>
     <div class="item-container">
       <div class="item-img">
+        <img :src="landskapsLyrik"
+             @click="openPopup(landskapsLyrik, $event)"
+             alt='"Guldkantad Landskapslyrik" by Anita Blom, depicting a serene, colorful landscape.'>
+      </div>
+      <div class="item-info">
+        <h3>Guldkantad Landskapslyrik</h3>
+        <p>{{ $t('AcrylicPainting') }} 40x50</p>
+        <p>{{ $t('Price') }}: 3600 SEK</p>
+      </div>
+    </div>
+    <div class="item-container">
+      <div class="item-img">
         <img :src="kolibriImg"
              @click="openPopup(kolibriImg, $event)"
              alt='"Kolibri" acrylic painting of a hummingbird by Anita Blom'>
       </div>
       <div class="item-info">
-        <h3>{{ $t('Sold')}}</h3>
+        <h3>{{ $t('Sold') }}</h3>
       </div>
     </div>
+
 
 
     <div v-if="showPopup" class="popup" @click="closePopup">
