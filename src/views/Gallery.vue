@@ -16,6 +16,7 @@ import kraftenINaturensStillaDansImg from '../assets/images/anitablomart_kraften
 import skargardensSerenadImg from '../assets/images/anitablomart_skargardens_serenad_acrylic_painting_seagulls.jpg';
 import fridensSkimmerImg from '../assets/images/anitablom_fridens_skimmer_herons.jpg';
 import kolibriImg from '../assets/images/anitablomart_kolibri_hummingbird.jpg';
+import landskapsLyrik from '../assets/images/anitablomart_guldkantad_landskapslyrik_acrylic_painting.jpg';
 
 const showPopup = ref(false);
 const popupImageSrc = ref('');
@@ -104,6 +105,12 @@ const closePopup = () => {
         <div class="art-row-item">
           <img @click="openPopup(litenFloristImg, $event)" :src="litenFloristImg"
                alt='"Liten florist" acrylic painting depicting a young hare arranging flowers by Anita Blom'>
+        </div>
+      </div>
+      <div class="art-row">
+        <div class="art-row-item">
+          <img @click="openPopup(landskapsLyrik, $event)" :src="landskapsLyrik"
+               alt='"Guldkantad Landskapslyrik" by Anita Blom, depicting a serene, colorful landscape.'>
         </div>
       </div>
     </section>
